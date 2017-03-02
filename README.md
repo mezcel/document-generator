@@ -1,8 +1,6 @@
 # Document Writer App
 
-## document-generator
+### document-generator: application corespondance related templates
 
-#### application corespondance relate templates
-
-Wiki Page
+Wiki Page:
 https://mezcel.wixsite.com/documentapp
