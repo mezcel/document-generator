@@ -2,5 +2,4 @@
 
 ### document-generator: application corespondance related templates
 
-Wiki Page:
-https://mezcel.wixsite.com/documentapp
+[Document Writer App Wiki Page:](http://mezcel.wixsite.com/documentapp) A web page link used to illustrate the organization and purpose of this coding project
