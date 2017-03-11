@@ -24,318 +24,316 @@
 	
 	<!-- my styles -->
 	<style rel="stylesheet" type="text/css">
-/* **************************************** */
-/* *** modify insustry standard styles  *** */
-/* **************************************** */
-	body {
-		font-family: monospace;
-		background-color: silver;
-		height: 100%;
-	}
-	input[type=text], input[type=url], input[type=email], input[type=tel], select, option {
-		border: solid;
-		border-width: 1px;
-		border-radius: 15px 15px 15px 15px;
-		border-color: gray;
-	}
-	a {
-		cursor: pointer;
-	}
-	table, td, th {
-		text-align: center;
-	}
+		/* **************************************** */
+		/* *** modify insustry standard styles  *** */
+		/* **************************************** */
+			body {
+				font-family: monospace;
+				background-color: silver;
+				height: 100%;
+			}
+			input[type=text], input[type=url], input[type=email], input[type=tel], select, option {
+				border: solid;
+				border-width: 1px;
+				border-radius: 15px 15px 15px 15px;
+				border-color: gray;
+			}
+			a {
+				cursor: pointer;
+			}
+			table, td, th {
+				text-align: center;
+			}
 
-	table {
-		border-collapse: collapse;
-		width: 100%;
-	}
+			table {
+				border-collapse: collapse;
+				width: 100%;
+			}
 
-	th {
-		height: 50px;
-	}
-	.active {
-		font-weight: bold;
-		font-size: 16px;
-	}
-	/* Remove the navbar's default */ 
-	.navbar {
-		margin-bottom: 0;
-		border-radius: 0;
-	}
-	/* Modify the jumbotron's default */ 	
-	.jumbotron {
-		padding-top: 0px;
-		padding-bottom: 0px;
-		margin-bottom: 0px;
-		font-weight: bold;
-	}
-	/* Modify the navbar-brand default */
-	.navbar-brand {
-		font-weight: bold;
-		font-size: 24px;
-		width: 120px;
-	}
-	/* **************************** */
-	/* *** App specific styles  *** */
-	/* **************************** */
-	
-	/* used in FOUC: Flash Of Unstyled Content */
-	.starthidden-onpageload {
-		/* visibility: hidden;  screen readers */
-		display: none;
-	}
-	#myCoverPage {
-		background: url('app background.jpg') repeat;
-		/*
-		background: url('http://designwoop.com/uploads/2012/03/17_free_subtle_textures_texturetastic_gray.jpg') repeat ;
-		*/
-		color: black;
-		font-size: 58px;
-	}
-	.my-preview-font {
-		/* font-family: "Georgia", serf, serif; */
-		font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-	}
-	.preview-container{
-		padding-top: 68px;
-		padding-left: 120px;
-		padding-bottom: 55px;
-		width: 100%;
-		line-height: 24px;		
-	}
-	.center-sidenav {
-		margin: auto;
-		position: relative;
-		top: 50%;
-		transform: translateY(-50%);
-	}
-	.button-sidenav {
-		/* padding: 30px 30px 30px 30px;*/
-		width: 80px;
-		height: 80px;
-		color: black;
-		font-weight: bold;
-	}
-	.span-width {
-		color: black;
-		background-color: lightgray;
-		padding-left:0;
-		padding-right:0;
-		min-width: 118px;
-		border-radius: 15px 0 0 15px;
-		border: solid;
-		border-color: gray;
-		border-width: 1px;
-	}
-	.highlighterDiv {
-		background-color: #FFFF99; /* Yellow-ish */
-		color: black;
-		border-bottom: 2px solid red;
-		border-bottom: 2px solid #ff3385;
-		min-width: 20px;
-		padding-left: 3px;
-		padding-right: 3px;
-		text-indent: 0px;
-	}
-	.tab {
-		text-indent: 40px;
-	}	
-	/* Set gray background color and 100% xy center */
-	.sidenav {
-		/*padding-top: 130px;*/
-		left: 0em;
-		width: 120px;
-		height: 100%;
-		position: absolute;
-		background-color: #555;
-		color: white;
-		visibility: visible;
-		z-index: 10;
-	}
-	.graytheme-paper {
-		background-color: lightgray;
-		background-color:#f2f2f2;
-		color: black;
-		padding-top: 35px;
-		padding-bottom: 35px;
-	}
-	.whitetheme-paper {
-		background-color: white;
-		color: black;
-	}
-	.small-screen-navButtons {
-		display: none;
-		visibility: hidden;
-		height: 55px;
-		width: 100%;
-		padding-top: 5px;
-	}
-	/* center the div in whole app */
-	.vertical-center {
-		min-height: 100%;  /* Fallback for vh unit */
-		/* min-height: 100vh; */height: 100vh;
+			th {
+				height: 50px;
+			}
+			.active {
+				font-weight: bold;
+				font-size: 16px;
+			}
+			/* Remove the navbar's default */ 
+			.navbar {
+				margin-bottom: 0;
+				border-radius: 0;
+			}
+			/* Modify the jumbotron's default */ 	
+			.jumbotron {
+				padding-top: 0px;
+				padding-bottom: 0px;
+				margin-bottom: 0px;
+				font-weight: bold;
+			}
+			/* Modify the navbar-brand default */
+			.navbar-brand {
+				font-weight: bold;
+				font-size: 24px;
+				width: 120px;
+			}
+			/* **************************** */
+			/* *** App specific styles  *** */
+			/* **************************** */
 
-		/* Make it a flex container */
-		display: -webkit-box;
-		display: -moz-box;
-		display: -ms-flexbox;
-		display: -webkit-flex;
-		display: flex; 
+			/* used in FOUC: Flash Of Unstyled Content */
+			.starthidden-onpageload {
+				/* visibility: hidden;  screen readers */
+				display: none;
+			}
+			#myCoverPage {
+				background: url('app background.jpg') repeat;
+				/*
+				background: url('http://designwoop.com/uploads/2012/03/17_free_subtle_textures_texturetastic_gray.jpg') repeat ;
+				*/
+				color: black;
+				font-size: 58px;
+			}
+			.my-preview-font {
+				/* font-family: "Georgia", serf, serif; */
+				font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+			}
+			.preview-container{
+				padding-top: 68px;
+				padding-left: 120px;
+				padding-bottom: 55px;
+				width: 100%;
+				line-height: 24px;		
+			}
+			.center-sidenav {
+				margin: auto;
+				position: relative;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+			.button-sidenav {
+				/* padding: 30px 30px 30px 30px;*/
+				width: 80px;
+				height: 80px;
+				color: black;
+				font-weight: bold;
+			}
+			.span-width {
+				color: black;
+				background-color: lightgray;
+				padding-left:0;
+				padding-right:0;
+				min-width: 118px;
+				border-radius: 15px 0 0 15px;
+				border: solid;
+				border-color: gray;
+				border-width: 1px;
+			}
+			.highlighterDiv {
+				background-color: #FFFF99; /* Yellow-ish */
+				color: black;
+				border-bottom: 2px solid red;
+				border-bottom: 2px solid #ff3385;
+				min-width: 20px;
+				padding-left: 3px;
+				padding-right: 3px;
+				text-indent: 0px;
+			}
+			.tab {
+				text-indent: 40px;
+			}	
+			/* Set gray background color and 100% xy center */
+			.sidenav {
+				/*padding-top: 130px;*/
+				left: 0em;
+				width: 120px;
+				height: 100%;
+				position: absolute;
+				background-color: #555;
+				color: white;
+				visibility: visible;
+				z-index: 10;
+			}
+			.graytheme-paper {
+				background-color: lightgray;
+				background-color:#f2f2f2;
+				color: black;
+				padding-top: 35px;
+				padding-bottom: 35px;
+			}
+			.whitetheme-paper {
+				background-color: white;
+				color: black;
+			}
+			.small-screen-navButtons {
+				display: none;
+				visibility: hidden;
+				height: 55px;
+				width: 100%;
+				padding-top: 5px;
+			}
+			/* center the div in whole app */
+			.vertical-center {
+				min-height: 100%;  /* Fallback for vh unit */
+				/* min-height: 100vh; */height: 100vh;
 
-		/* Align the bootstrap's container vertically */
-		-webkit-box-align : center;
-		-webkit-align-items : center;
-		-moz-box-align : center;
-		-ms-flex-align : center;
-		align-items : center;
+				/* Make it a flex container */
+				display: -webkit-box;
+				display: -moz-box;
+				display: -ms-flexbox;
+				display: -webkit-flex;
+				display: flex; 
 
-		/* In legacy web browsers, specify the width of the flex container */
-		width: 100%;
+				/* Align the bootstrap's container vertically */
+				-webkit-box-align : center;
+				-webkit-align-items : center;
+				-moz-box-align : center;
+				-ms-flex-align : center;
+				align-items : center;
 
-		/* Also 'margin: 0 auto' doesn't have any effect on flex items in such web browsers hence the bootstrap's container won't be aligned to the center anymore. Therefore, we use the following declarations to get it centered again */
-		-webkit-box-pack : center;
-		-moz-box-pack : center;
-		-ms-flex-pack : center;
-		-webkit-justify-content : center;
-		justify-content : center;
-		
-		/* additional checks */
-		-ms-overflow-style: auto;
-		-ms-overflow-scrolling: touch;
-		vertical-align: middle;
-	}
-	
-	/* https://css-tricks.com/almanac/properties/s/scrollbar/ */
-	.myScrollWindow::-webkit-scrollbar {
-		width: 1em;
-	}
-	.myScrollWindow::-webkit-scrollbar-track {
-		-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	}
-	.myScrollWindow::-webkit-scrollbar-thumb {
-	  background-color: darkgrey;
-	  outline: 1px solid slategrey;
-	}
-	.myInputInvalid {
-		background-color: #f9ecec;
-		color: #993333;
-		border-color: #993333;
-	}
-	.myInputValid {
-		background-color: #eafaea;
-		color: green;
-		border-color: #1a3300;
-	}
-	.myColor-OliveDrab  {
-		background-color: #96B566;
-	}
-	.myColor-OliveDrab:hover {
-		background-color: #BCE27F;
-		color: #02330C;
-	}
-	/* decorative Clock and Gear animated SVGs */
-	.defs {
-		display: none;
-	}
-	.myGearsSvg {
-		position: fixed!important;
-		right: 0;
-		bottom: 100px;
-		opacity: 0.1;
-	}
-	/* decorative switches */
-	.switch {
-	  position: relative;
-	  display: inline-block;
-	  width: 60px;
-	  height: 34px;
-	}
-	.switch input {
-		display:none;
-	}
-	.slider {
-	  position: absolute;
-	  cursor: pointer;
-	  top: 0;
-	  left: 0;
-	  right: 0;
-	  bottom: 0;
-	  background-color: #ccc;
-	  -webkit-transition: .4s;
-	  transition: .4s;
-	}
-	.slider:before {
-	  position: absolute;
-	  content: "";
-	  height: 26px;
-	  width: 26px;
-	  left: 4px;
-	  bottom: 4px;
-	  background-color: white;
-	  -webkit-transition: .4s;
-	  transition: .4s;
-	}
-	input:checked + .slider {
-	  background-color: #666699;
-	}
-	input:focus + .slider {
-	  box-shadow: 0 0 1px #666699;
-	}
-	input:checked + .slider:before {
-	  -webkit-transform: translateX(26px);
-	  -ms-transform: translateX(26px);
-	  transform: translateX(26px);
-	}
-	/* Rounded sliders */
-	.slider.round {
-	  border-radius: 34px;
-	}
-	.slider.round:before {
-	  border-radius: 50%;
-	}
-	.toggleBlackBackground {
-		background-color: black;
-		color: silver;
-	}
-	.formValidationButtonContainer {
-		width: 50wv;
-	}
-	.marquee {
-		top: 6em;
-		position: relative;
-		box-sizing: border-box;
-		animation: marquee 30s linear infinite;
-	}
-	.marquee:hover {
-		animation-play-state: paused;
-	}
-	@keyframes marquee {
-		0%   { top:   8em }
-		100% { top: -11em }
-	}
+				/* In legacy web browsers, specify the width of the flex container */
+				width: 100%;
 
-	/* On small screens, set height to 'auto' for sidenav and grid */
-	@media screen and (max-width: 767px) {
-		.sidenav {
-			display: none;
-			visibility: hidden;
-		}
-		.small-screen-navButtons {
-			visibility: visible;
-			display: block;
-		}
-		.preview-container{
-			padding-top: 90px;
-			padding-left: 2px;
-			height:100%;
-			width: 100%;
-		}
-		.text-left {
-			padding-bottom: 60px;
-		}
-	}
+				/* Also 'margin: 0 auto' doesn't have any effect on flex items in such web browsers hence the bootstrap's container won't be aligned to the center anymore. Therefore, we use the following declarations to get it centered again */
+				-webkit-box-pack : center;
+				-moz-box-pack : center;
+				-ms-flex-pack : center;
+				-webkit-justify-content : center;
+				justify-content : center;
 
-	
+				/* additional checks */
+				-ms-overflow-style: auto;
+				-ms-overflow-scrolling: touch;
+				vertical-align: middle;
+			}
+
+			/* https://css-tricks.com/almanac/properties/s/scrollbar/ */
+			.myScrollWindow::-webkit-scrollbar {
+				width: 1em;
+			}
+			.myScrollWindow::-webkit-scrollbar-track {
+				-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+			}
+			.myScrollWindow::-webkit-scrollbar-thumb {
+			  background-color: darkgrey;
+			  outline: 1px solid slategrey;
+			}
+			.myInputInvalid {
+				background-color: #f9ecec;
+				color: #993333;
+				border-color: #993333;
+			}
+			.myInputValid {
+				background-color: #eafaea;
+				color: green;
+				border-color: #1a3300;
+			}
+			.myColor-OliveDrab  {
+				background-color: #96B566;
+			}
+			.myColor-OliveDrab:hover {
+				background-color: #BCE27F;
+				color: #02330C;
+			}
+			/* decorative Clock and Gear animated SVGs */
+			.defs {
+				display: none;
+			}
+			.myGearsSvg {
+				position: fixed!important;
+				right: 0;
+				bottom: 100px;
+				opacity: 0.1;
+			}
+			/* decorative switches */
+			.switch {
+			  position: relative;
+			  display: inline-block;
+			  width: 60px;
+			  height: 34px;
+			}
+			.switch input {
+				display:none;
+			}
+			.slider {
+			  position: absolute;
+			  cursor: pointer;
+			  top: 0;
+			  left: 0;
+			  right: 0;
+			  bottom: 0;
+			  background-color: #ccc;
+			  -webkit-transition: .4s;
+			  transition: .4s;
+			}
+			.slider:before {
+			  position: absolute;
+			  content: "";
+			  height: 26px;
+			  width: 26px;
+			  left: 4px;
+			  bottom: 4px;
+			  background-color: white;
+			  -webkit-transition: .4s;
+			  transition: .4s;
+			}
+			input:checked + .slider {
+			  background-color: #666699;
+			}
+			input:focus + .slider {
+			  box-shadow: 0 0 1px #666699;
+			}
+			input:checked + .slider:before {
+			  -webkit-transform: translateX(26px);
+			  -ms-transform: translateX(26px);
+			  transform: translateX(26px);
+			}
+			/* Rounded sliders */
+			.slider.round {
+			  border-radius: 34px;
+			}
+			.slider.round:before {
+			  border-radius: 50%;
+			}
+			.toggleBlackBackground {
+				background-color: black;
+				color: silver;
+			}
+			.formValidationButtonContainer {
+				width: 50wv;
+			}
+			.marquee {
+				top: 6em;
+				position: relative;
+				box-sizing: border-box;
+				animation: marquee 30s linear infinite;
+			}
+			.marquee:hover {
+				animation-play-state: paused;
+			}
+			@keyframes marquee {
+				0%   { top:   8em }
+				100% { top: -11em }
+			}
+
+			/* On small screens, set height to 'auto' for sidenav and grid */
+			@media screen and (max-width: 767px) {
+				.sidenav {
+					display: none;
+					visibility: hidden;
+				}
+				.small-screen-navButtons {
+					visibility: visible;
+					display: block;
+				}
+				.preview-container{
+					padding-top: 90px;
+					padding-left: 2px;
+					height:100%;
+					width: 100%;
+				}
+				.text-left {
+					padding-bottom: 60px;
+				}
+			}
 	</style>
 
 	
@@ -1087,498 +1085,498 @@
 	<!-- my jSCript AngularJS jQuery -->
 	<script type="text/javascript">
 
-var app = angular.module('myApp', []);
-var mycontactObject = {firstName: "", middleName: "", lastName: "", address: "", city: "", state: "", zip: "", phone: "", email: "", myUrl: ""};
-var companyInfoObject = {jobname: "", jobid: "", hours: "", name: "", address: "", city: "", state: "", zip: "", website: "", attn: "", attnemail: "", phone:"", situation:""};
-var industryThemesObject = {companydescription: "", companyphilosophy: "", companycustomers: "", companydistinguish: "" };
-var whatIofferObject = {applicationidentity: "", skillarray: "", knowledgearray: "", abilityarray: ""};
-var emailletterObject = {lead:"", research:"", letter:""};
-var resumeObject = {template1:"", template2:"", template3:""};
-var coverletterObject = {template1:"", template2:"", template3:""};
-var templateObject = {resumeInput:"", resumeDefault:"<p><b>Services</b></p><p><center><table><tr><td>Embedded System Analysis</td><td>Debugging &amp; Troubleshooting</td><td>Testing &amp; Documentation</td></tr><tr><td>Software Development</td><td>Requirements Management</td><td>Project Management</td></tr><tr><td>Coding &amp; Scripting</td><td>GUI Design</td><td>Database Design</td></tr></table></center></p><p><b>Technology Summary</b></p><p><u>Programming</u>: C, C ++, C#, XML, CSV, SVG, MySQL, MSSql, HTML, VB.Net, ASP.NET, ADO.NET, LINQ, Java, JavaScript, AngularJS, jQuery, CSS, and PHP</p><p><u>Development Tools</u>: MS Visual Studio 2012, MS Sql Server Management Studio, MySql Workbench, WAMP Server, Oracle NetBeans IDE, Notepad ++, Inkscape and Sketchup (CAD), MS Office Suite</p><p><u>Systems</u>: Windows, Dot NET</p><p><b>Education</b></p><p><u>Gannon University Erie, PA | B.S. Electrical/Computer Engineering, 2006</u><br>Electrical Engineering, Computer Engineering, Embedded SystemsPublished Scientific Journal on Artificial Intelligence</p><p></p><p><u>TCC, Tallahassee, FL | (Continued Education) Environmental Science, 2014</u><br>Environmental Systems, Plant Biology, Environmental Law/Regulations</p><p><u>Gannon University Erie, PA | (Masters Schooling) Information Analytics, 2015</u><br>Database Management, Requirements for Software Systems</p><p><b>Professional Experience</b></p><p><u>Independent Green Technologies (IGT) - Tallahassee, FL</u><br>CAD Specialist, 2014</p><p>My responsibility in the company focused on using computer aided design (CAD) tools to model price and cost projections for large-scale commercial organizations and residential stakeholders. The models were used to appraise and simulate design efficiency and feasibility to construct.</p><p><u>United States Coast Guard Cutter Mustang (WPB 1310) - Seward, AK</u><br>Machinery Technician, 2011-2013</p><p>As a member of a ship's engineering staff, I took the initiative to enhance our machinery related catalog and inventory database. Because of this initiative, enhancements were implemented service wide on that ship class. I used MS Access to develop a parts inventory catalog for EATON/Aeroquip brand high pressure hoses. This application was used to manage the preventative maintenance schedule, parts and pricing, and for ordering replacements for worn or damaged equipment and accessory parts.</p><p><u>Coast Guard Station Venice - Venice, LA</u><br>Search and Rescue, Boarding Officer, 2008-2011</p><p>In conjunction with search and rescue response duties, I developed a computer application to enhance safety and productivity. I used my computer technology skills to develop an HTML, CSS and RSS feed based application to gather weather, sea state and tidal information to assist in risk assessment for boats deploying in search and rescue operations.</p>"};
+		var app = angular.module('myApp', []);
+		var mycontactObject = {firstName: "", middleName: "", lastName: "", address: "", city: "", state: "", zip: "", phone: "", email: "", myUrl: ""};
+		var companyInfoObject = {jobname: "", jobid: "", hours: "", name: "", address: "", city: "", state: "", zip: "", website: "", attn: "", attnemail: "", phone:"", situation:""};
+		var industryThemesObject = {companydescription: "", companyphilosophy: "", companycustomers: "", companydistinguish: "" };
+		var whatIofferObject = {applicationidentity: "", skillarray: "", knowledgearray: "", abilityarray: ""};
+		var emailletterObject = {lead:"", research:"", letter:""};
+		var resumeObject = {template1:"", template2:"", template3:""};
+		var coverletterObject = {template1:"", template2:"", template3:""};
+		var templateObject = {resumeInput:"", resumeDefault:"<p><b>Services</b></p><p><center><table><tr><td>Embedded System Analysis</td><td>Debugging &amp; Troubleshooting</td><td>Testing &amp; Documentation</td></tr><tr><td>Software Development</td><td>Requirements Management</td><td>Project Management</td></tr><tr><td>Coding &amp; Scripting</td><td>GUI Design</td><td>Database Design</td></tr></table></center></p><p><b>Technology Summary</b></p><p><u>Programming</u>: C, C ++, C#, XML, CSV, SVG, MySQL, MSSql, HTML, VB.Net, ASP.NET, ADO.NET, LINQ, Java, JavaScript, AngularJS, jQuery, CSS, and PHP</p><p><u>Development Tools</u>: MS Visual Studio 2012, MS Sql Server Management Studio, MySql Workbench, WAMP Server, Oracle NetBeans IDE, Notepad ++, Inkscape and Sketchup (CAD), MS Office Suite</p><p><u>Systems</u>: Windows, Dot NET</p><p><b>Education</b></p><p><u>Gannon University Erie, PA | B.S. Electrical/Computer Engineering, 2006</u><br>Electrical Engineering, Computer Engineering, Embedded SystemsPublished Scientific Journal on Artificial Intelligence</p><p></p><p><u>TCC, Tallahassee, FL | (Continued Education) Environmental Science, 2014</u><br>Environmental Systems, Plant Biology, Environmental Law/Regulations</p><p><u>Gannon University Erie, PA | (Masters Schooling) Information Analytics, 2015</u><br>Database Management, Requirements for Software Systems</p><p><b>Professional Experience</b></p><p><u>Independent Green Technologies (IGT) - Tallahassee, FL</u><br>CAD Specialist, 2014</p><p>My responsibility in the company focused on using computer aided design (CAD) tools to model price and cost projections for large-scale commercial organizations and residential stakeholders. The models were used to appraise and simulate design efficiency and feasibility to construct.</p><p><u>United States Coast Guard Cutter Mustang (WPB 1310) - Seward, AK</u><br>Machinery Technician, 2011-2013</p><p>As a member of a ship's engineering staff, I took the initiative to enhance our machinery related catalog and inventory database. Because of this initiative, enhancements were implemented service wide on that ship class. I used MS Access to develop a parts inventory catalog for EATON/Aeroquip brand high pressure hoses. This application was used to manage the preventative maintenance schedule, parts and pricing, and for ordering replacements for worn or damaged equipment and accessory parts.</p><p><u>Coast Guard Station Venice - Venice, LA</u><br>Search and Rescue, Boarding Officer, 2008-2011</p><p>In conjunction with search and rescue response duties, I developed a computer application to enhance safety and productivity. I used my computer technology skills to develop an HTML, CSS and RSS feed based application to gather weather, sea state and tidal information to assist in risk assessment for boats deploying in search and rescue operations.</p>"};
 
-//var recieverBtnEnterBool = false;
+		//var recieverBtnEnterBool = false;
 
-var tabIndex = null;
+		var tabIndex = null;
 
-app.controller('myAppCtrl', ['$scope', function($scope) {
-	/* tab toggle */
-	$scope.tab = 99;
-	$scope.hourstype = [ {id:'0', workduration : "temp"}, {id:'1', workduration : "full-time"}, { id:'2', workduration : "part-time" }, { id:'3', workduration : "hourly"}, { id:'4', workduration : "seasonal"}, { id:'5', workduration : "salary"} ];
-	$scope.recieverBtnEnterBool = false;
-	
-	$scope.tabShow = function(newTab) {
-		if ($scope.tab !== newTab){
-			$scope.tab = newTab;
-			tabIndex = newTab;
-		} else {
-			//$scope.tab = !$scope.tab;
-		}
-		
-	};
-	$scope.tabclassActive = function(tabNum) {
-		return $scope.tab === tabNum;
-	};
-	
-	/* show start app*/
-	$scope.starApp = function() {
-		/* $('#myCoverPage').css('display','none'); $('#mainContainer').css('display','block');//alternative  */
-		$('#myCoverPage').hide();
-		$('#mainContainer').show();
-		
-		$scope.rdoEmailTemplate = "3";
-		$scope.rdoCoverLetterTemplate = "3";
-		$scope.rdoResumeTemplate = "3";
-		$scope.dbxTemplate = '1';
-	};
-	
-	/* toggle clock colors */
-	$scope.toggleClock = false;
-	/* toggle paper colors */
-	$scope.togglePaper = false;
-	
-	$scope.loadResumeTemplateStrings = function(val) {
-		if (val === '3') {
-			document.getElementById('resumeTemplate').innerHTML = templateObject.resumeDefault;
-		} else if (val === '1') {
-			document.getElementById('resumeTemplate').innerHTML = templateObject.resumeInput;
-		} else {
-			document.getElementById('resumeTemplate').innerHTML = "IMPORT A THEME !!!";
-		}
-	};
-	/* clear inputs from the div in view */
-	$scope.clearSelectedInputTabs = function() {
-		$scope.mycontactObjectClear = {firstName: "Michael", middleName: "Jerome", lastName: "Todd", address: "", city: "", state: "", zip: "", phone: "", email: "mezcel@mail.com", myUrl: ""};
-		var companyInfoObjectClear = {jobname: "", jobid: "", hours: "", name: "", address: "", city: "", state: "", zip: "", website: "", attn: "", attnemail: "", phone:"", situation:""};
-		var industryThemesObjectClear = {companydescription: "", companyphilosophy: "", companycustomers: "", companydistinguish: "" };
-		var whatIofferObjectClear = {applicationidentity: "", skillarray: "", knowledgearray: "", abilityarray: ""};
+		app.controller('myAppCtrl', ['$scope', function($scope) {
+			/* tab toggle */
+			$scope.tab = 99;
+			$scope.hourstype = [ {id:'0', workduration : "temp"}, {id:'1', workduration : "full-time"}, { id:'2', workduration : "part-time" }, { id:'3', workduration : "hourly"}, { id:'4', workduration : "seasonal"}, { id:'5', workduration : "salary"} ];
+			$scope.recieverBtnEnterBool = false;
 
-		switch (tabIndex) {
-			case 1:
-				$scope.user = angular.copy($scope.mycontactObjectClear);
-				break;			
-			case 2:
-				$scope.audience = angular.copy($scope.companyInfoObjectClear);
-				$scope.recieverBtnEnterBool = false;
-				break;
-			case 3:
-				$scope.environmentsetting = angular.copy($scope.industryThemesObjectClear);
-				break;
-			case 4:
-				$scope.desirability = angular.copy($scope.whatIofferObjectClear);
-				break;
-			case 11:
-				$scope.leads.leadtype = '';
-				$scope.leads.followup = '';
-				$scope.frmEmailLetter = $setPristine();
-				break;
-			case 15:
-			//clear all
-				$scope.user = angular.copy($scope.mycontactObjectClear);
-				//$scope.frmUser = $setPristine();
-				
-				$scope.audience = angular.copy($scope.companyInfoObjectClear);
-				//$scope.frmAudience = $setPristine();
-				
-				$scope.environmentsetting = angular.copy($scope.industryThemesObjectClear);
-				//$scope.frmEnvironment = $setPristine();
-				
-				$scope.desirability = angular.copy($scope.whatIofferObjectClear);
-				//$scope.frmDesirability = $setPristine();
-				
-				$scope.leads.leadtype = '';
-				$scope.leads.followup = '';
-				//$scope.frmEmailLetter = $setPristine();
-				
-				$scope.recieverBtnEnterBool = false;
-				
+			$scope.tabShow = function(newTab) {
+				if ($scope.tab !== newTab){
+					$scope.tab = newTab;
+					tabIndex = newTab;
+				} else {
+					//$scope.tab = !$scope.tab;
+				}
+
+			};
+			$scope.tabclassActive = function(tabNum) {
+				return $scope.tab === tabNum;
+			};
+
+			/* show start app*/
+			$scope.starApp = function() {
+				/* $('#myCoverPage').css('display','none'); $('#mainContainer').css('display','block');//alternative  */
+				$('#myCoverPage').hide();
+				$('#mainContainer').show();
+
 				$scope.rdoEmailTemplate = "3";
 				$scope.rdoCoverLetterTemplate = "3";
 				$scope.rdoResumeTemplate = "3";
 				$scope.dbxTemplate = '1';
-		
-				break;
-			default:
-				break;
-		}
-	};
-	
-	/* demo button */
-	$scope.btnDemo = function() {
-		$scope.mycontactObjectDemo = {firstName: "John", middleName: "Doe", lastName: "Smith", address: "123 Adsr Ln.", city: "Sim CIty", state: "AB", zip: "12345", phone: "123-456-7890", email: "jds@email.com", myUrl: "http://www.johndoesmith.com"};
-		$scope.companyInfoObjectDemo = {jobname: "Software Developer", jobid: "C#", hours: "seasonal", name: "Fielmann Ventures", address: "Weidestraße 118A", city: "22083", state: "Hamburg", zip: "Germany", website: "http://www.fielmann-ventures.com", attn: "Mr. Fielmann", attnemail: "info@fielmann-ventures.com", phone:"+49 40 27076 3090", situation:"Stackoverflow Jobs"};
-		$scope.industryThemesObjectDemo = {companydescription: "is a venture capitalist firm", companyphilosophy: "gathers multidisciplinary talent and cultivates their abilities to develop new technologies", companycustomers: " are existing small technology companies and private investors seeking to bid for and develop intellectual property", companydistinguish: "You are based in Germany and develop startup development companies" };
-		$scope.whatIofferObjectDemo = {applicationidentity: "C# developer", skillarray: "C#, Java, C++, .NET Core and MongoDB", knowledgearray: "am capable of being up-to-date with the latest developments in various technical fields", abilityarray: "solid theoretical foundations in various areas of computing, including algorithms & data structures, databases and especially distributed computing"};
+			};
 
-		$scope.user = angular.copy($scope.mycontactObjectDemo);
-		$scope.audience = angular.copy($scope.companyInfoObjectDemo);
-		$scope.environmentsetting = angular.copy($scope.industryThemesObjectDemo);
-		$scope.desirability = angular.copy($scope.whatIofferObjectDemo);
-		
-		$scope.leads.leadtype = "Stackoverflow Jobs";
-		$scope.leads.followup = "your company's website";
-		$scope.audience.hours = $scope.hourstype[2];
-		
-		$scope.frmTemplates.rdoEmailTemplate = 3;
-		$scope.frmTemplates.rdoCoverLetterTemplate = 3;
-		$scope.frmTemplates.rdoResumeTemplate = 3;
-		$scope.loadResumeTemplateStrings('3');
-		$scope.dbxTemplate = '1';
-	};
-		
-	/* Enter Button */
-	$scope.btnEnter = function() {
-		switch (tabIndex) {
-			case 1:
-				mycontactObject.firstName = $scope.user.firstName;
-				mycontactObject.middleName = $scope.user.middleName;
-				mycontactObject.lastName = $scope.user.lastName;
-				mycontactObject.address = $scope.user.address;
-				mycontactObject.city = $scope.user.city;
-				mycontactObject.state = $scope.user.state;
-				mycontactObject.zip = $scope.user.zip;
-				mycontactObject.phone = $scope.user.phone;
-				mycontactObject.email = $scope.user.email;
-				mycontactObject.myUrl = $scope.user.myUrl;				
-				
-				break;
-			case 2:
-				companyInfoObject.jobname = $scope.audience.jobname;
-				companyInfoObject.jobid = $scope.audience.jobid;
-				companyInfoObject.hours = $scope.audience.hours.workduration;
-				companyInfoObject.name = $scope.audience.name;
-				companyInfoObject.address = $scope.audience.address;
-				companyInfoObject.city = $scope.audience.city;
-				companyInfoObject.state = $scope.audience.state;
-				companyInfoObject.zip = $scope.audience.zip;
-				companyInfoObject.website = $scope.audience.website;
-				companyInfoObject.attn = $scope.audience.attn;
-				companyInfoObject.attnemail = $scope.audience.attnemail;
-				companyInfoObject.phone = $scope.audience.phone;
-				companyInfoObject.situation = $scope.audience.situation;
-				
-				$scope.recieverBtnEnterBool = true;
+			/* toggle clock colors */
+			$scope.toggleClock = false;
+			/* toggle paper colors */
+			$scope.togglePaper = false;
 
-				break;
-			case 3:
-				industryThemesObject.companydescription = $scope.environmentsetting.companydescription;
-				industryThemesObject.companydescription = $scope.environmentsetting.companyphilosophy;
-				industryThemesObject.companydescription = $scope.environmentsetting.companycustomers;
-				industryThemesObject.companydescription = $scope.environmentsetting.companydistinguish;
-				
-				break;
-			case 4:
-				whatIofferObject.applicationidentity = $scope.desirability.applicationidentity;
-				whatIofferObject.skillarray = $scope.desirability.skillarray;
-				whatIofferObject.knowledgearray = $scope.desirability.knowledgearray;
-				whatIofferObject.abilityarray = $scope.desirability.abilityarray;
-				
-				break;
-			case 6:
-				//
-				break;
-			case 11:
-				break;
-			default:
-				break;
-		}
-	};
-	
-	/* Time Date */
-	$scope.today = new Date();
-	
-	/* clear log preview */
-	$scope.btnClrLog = function(logDiv) {
-		$(logDiv).html("<table class='table'><thread><tr><th>jobName</th><th>jobId</th><th>full/part</th><th>company</th><th>address</th><th>city</th><th>state</th><th>zip</th><th>website</th><th>Attn:</th><th>email</th><th>phone</th><th>lead</th><th>date</th></tr></thread><tbody></tbody></table>");
-	}
-	
-	/* print documents */
-	$scope.btnPrintDocs = function() {
-		'use strict';
-		var pos, co, st;
-		pos = $scope.audience.jobname;
-		co = $scope.audience.name;
-		st = $scope.audience.state;
-		
-		printDocs(pos, co, st);
-		
-		$scope.documentName = "Last File Completed: " + $scope.audience.jobname + " | " + $scope.audience.name + " | " + $scope.audience.state;
-		
-		scope2previewTable(companyInfoObject);
-		
-		$scope.clearSelectedInputTabs();
-	}
-}]);
+			$scope.loadResumeTemplateStrings = function(val) {
+				if (val === '3') {
+					document.getElementById('resumeTemplate').innerHTML = templateObject.resumeDefault;
+				} else if (val === '1') {
+					document.getElementById('resumeTemplate').innerHTML = templateObject.resumeInput;
+				} else {
+					document.getElementById('resumeTemplate').innerHTML = "IMPORT A THEME !!!";
+				}
+			};
+			/* clear inputs from the div in view */
+			$scope.clearSelectedInputTabs = function() {
+				$scope.mycontactObjectClear = {firstName: "Michael", middleName: "Jerome", lastName: "Todd", address: "", city: "", state: "", zip: "", phone: "", email: "mezcel@mail.com", myUrl: ""};
+				var companyInfoObjectClear = {jobname: "", jobid: "", hours: "", name: "", address: "", city: "", state: "", zip: "", website: "", attn: "", attnemail: "", phone:"", situation:""};
+				var industryThemesObjectClear = {companydescription: "", companyphilosophy: "", companycustomers: "", companydistinguish: "" };
+				var whatIofferObjectClear = {applicationidentity: "", skillarray: "", knowledgearray: "", abilityarray: ""};
 
-/* tooltip */
-$(document).ready(function() {
-	$('[data-toggle="tooltip"]').tooltip();
-});
-/* popover */
-$(document).ready(function() {
-	$('[data-toggle="popover"]').popover();
-});
+				switch (tabIndex) {
+					case 1:
+						$scope.user = angular.copy($scope.mycontactObjectClear);
+						break;			
+					case 2:
+						$scope.audience = angular.copy($scope.companyInfoObjectClear);
+						$scope.recieverBtnEnterBool = false;
+						break;
+					case 3:
+						$scope.environmentsetting = angular.copy($scope.industryThemesObjectClear);
+						break;
+					case 4:
+						$scope.desirability = angular.copy($scope.whatIofferObjectClear);
+						break;
+					case 11:
+						$scope.leads.leadtype = '';
+						$scope.leads.followup = '';
+						$scope.frmEmailLetter = $setPristine();
+						break;
+					case 15:
+					//clear all
+						$scope.user = angular.copy($scope.mycontactObjectClear);
+						//$scope.frmUser = $setPristine();
 
-/* navbar close on click */
-$(document).on('click.nav', '.navbar-collapse.in', function(e) {
-	if($(e.target).is('a')) {
-		$(this).removeClass('in').addClass('collapse');
-	}
-});
+						$scope.audience = angular.copy($scope.companyInfoObjectClear);
+						//$scope.frmAudience = $setPristine();
 
-/* file input */ 
-/* https://www.abeautifulsite.net/whipping-file-inputs-into-shape-with-bootstrap-3 */
-$(function() {
-	$(document).on('change', ':file', function() {
-		var input = $(this), numFiles = input.get(0).files ? input.get(0).files.length : 1, label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
-		input.trigger('fileselect', [numFiles, label]);
-	});
-	// We can watch for our custom `fileselect` event
-	$(document).ready( function() {
-		$(':file').on('fileselect', function(event, numFiles, label) {
-			var input = $(this).parents('.input-group').find(':text'), log = numFiles > 1 ? numFiles + ' files selected' : label;
-			if( input.length ) {
-				input.val(log);
-			} else {
-				if( log ) alert(log);
+						$scope.environmentsetting = angular.copy($scope.industryThemesObjectClear);
+						//$scope.frmEnvironment = $setPristine();
+
+						$scope.desirability = angular.copy($scope.whatIofferObjectClear);
+						//$scope.frmDesirability = $setPristine();
+
+						$scope.leads.leadtype = '';
+						$scope.leads.followup = '';
+						//$scope.frmEmailLetter = $setPristine();
+
+						$scope.recieverBtnEnterBool = false;
+
+						$scope.rdoEmailTemplate = "3";
+						$scope.rdoCoverLetterTemplate = "3";
+						$scope.rdoResumeTemplate = "3";
+						$scope.dbxTemplate = '1';
+
+						break;
+					default:
+						break;
+				}
+			};
+
+			/* demo button */
+			$scope.btnDemo = function() {
+				$scope.mycontactObjectDemo = {firstName: "John", middleName: "Doe", lastName: "Smith", address: "123 Adsr Ln.", city: "Sim CIty", state: "AB", zip: "12345", phone: "123-456-7890", email: "jds@email.com", myUrl: "http://www.johndoesmith.com"};
+				$scope.companyInfoObjectDemo = {jobname: "Software Developer", jobid: "C#", hours: "seasonal", name: "Fielmann Ventures", address: "Weidestraße 118A", city: "22083", state: "Hamburg", zip: "Germany", website: "http://www.fielmann-ventures.com", attn: "Mr. Fielmann", attnemail: "info@fielmann-ventures.com", phone:"+49 40 27076 3090", situation:"Stackoverflow Jobs"};
+				$scope.industryThemesObjectDemo = {companydescription: "is a venture capitalist firm", companyphilosophy: "gathers multidisciplinary talent and cultivates their abilities to develop new technologies", companycustomers: " are existing small technology companies and private investors seeking to bid for and develop intellectual property", companydistinguish: "You are based in Germany and develop startup development companies" };
+				$scope.whatIofferObjectDemo = {applicationidentity: "C# developer", skillarray: "C#, Java, C++, .NET Core and MongoDB", knowledgearray: "am capable of being up-to-date with the latest developments in various technical fields", abilityarray: "solid theoretical foundations in various areas of computing, including algorithms & data structures, databases and especially distributed computing"};
+
+				$scope.user = angular.copy($scope.mycontactObjectDemo);
+				$scope.audience = angular.copy($scope.companyInfoObjectDemo);
+				$scope.environmentsetting = angular.copy($scope.industryThemesObjectDemo);
+				$scope.desirability = angular.copy($scope.whatIofferObjectDemo);
+
+				$scope.leads.leadtype = "Stackoverflow Jobs";
+				$scope.leads.followup = "your company's website";
+				$scope.audience.hours = $scope.hourstype[2];
+
+				$scope.frmTemplates.rdoEmailTemplate = 3;
+				$scope.frmTemplates.rdoCoverLetterTemplate = 3;
+				$scope.frmTemplates.rdoResumeTemplate = 3;
+				$scope.loadResumeTemplateStrings('3');
+				$scope.dbxTemplate = '1';
+			};
+
+			/* Enter Button */
+			$scope.btnEnter = function() {
+				switch (tabIndex) {
+					case 1:
+						mycontactObject.firstName = $scope.user.firstName;
+						mycontactObject.middleName = $scope.user.middleName;
+						mycontactObject.lastName = $scope.user.lastName;
+						mycontactObject.address = $scope.user.address;
+						mycontactObject.city = $scope.user.city;
+						mycontactObject.state = $scope.user.state;
+						mycontactObject.zip = $scope.user.zip;
+						mycontactObject.phone = $scope.user.phone;
+						mycontactObject.email = $scope.user.email;
+						mycontactObject.myUrl = $scope.user.myUrl;				
+
+						break;
+					case 2:
+						companyInfoObject.jobname = $scope.audience.jobname;
+						companyInfoObject.jobid = $scope.audience.jobid;
+						companyInfoObject.hours = $scope.audience.hours.workduration;
+						companyInfoObject.name = $scope.audience.name;
+						companyInfoObject.address = $scope.audience.address;
+						companyInfoObject.city = $scope.audience.city;
+						companyInfoObject.state = $scope.audience.state;
+						companyInfoObject.zip = $scope.audience.zip;
+						companyInfoObject.website = $scope.audience.website;
+						companyInfoObject.attn = $scope.audience.attn;
+						companyInfoObject.attnemail = $scope.audience.attnemail;
+						companyInfoObject.phone = $scope.audience.phone;
+						companyInfoObject.situation = $scope.audience.situation;
+
+						$scope.recieverBtnEnterBool = true;
+
+						break;
+					case 3:
+						industryThemesObject.companydescription = $scope.environmentsetting.companydescription;
+						industryThemesObject.companydescription = $scope.environmentsetting.companyphilosophy;
+						industryThemesObject.companydescription = $scope.environmentsetting.companycustomers;
+						industryThemesObject.companydescription = $scope.environmentsetting.companydistinguish;
+
+						break;
+					case 4:
+						whatIofferObject.applicationidentity = $scope.desirability.applicationidentity;
+						whatIofferObject.skillarray = $scope.desirability.skillarray;
+						whatIofferObject.knowledgearray = $scope.desirability.knowledgearray;
+						whatIofferObject.abilityarray = $scope.desirability.abilityarray;
+
+						break;
+					case 6:
+						//
+						break;
+					case 11:
+						break;
+					default:
+						break;
+				}
+			};
+
+			/* Time Date */
+			$scope.today = new Date();
+
+			/* clear log preview */
+			$scope.btnClrLog = function(logDiv) {
+				$(logDiv).html("<table class='table'><thread><tr><th>jobName</th><th>jobId</th><th>full/part</th><th>company</th><th>address</th><th>city</th><th>state</th><th>zip</th><th>website</th><th>Attn:</th><th>email</th><th>phone</th><th>lead</th><th>date</th></tr></thread><tbody></tbody></table>");
+			}
+
+			/* print documents */
+			$scope.btnPrintDocs = function() {
+				'use strict';
+				var pos, co, st;
+				pos = $scope.audience.jobname;
+				co = $scope.audience.name;
+				st = $scope.audience.state;
+
+				printDocs(pos, co, st);
+
+				$scope.documentName = "Last File Completed: " + $scope.audience.jobname + " | " + $scope.audience.name + " | " + $scope.audience.state;
+
+				scope2previewTable(companyInfoObject);
+
+				$scope.clearSelectedInputTabs();
+			}
+		}]);
+
+		/* tooltip */
+		$(document).ready(function() {
+			$('[data-toggle="tooltip"]').tooltip();
+		});
+		/* popover */
+		$(document).ready(function() {
+			$('[data-toggle="popover"]').popover();
+		});
+
+		/* navbar close on click */
+		$(document).on('click.nav', '.navbar-collapse.in', function(e) {
+			if($(e.target).is('a')) {
+				$(this).removeClass('in').addClass('collapse');
 			}
 		});
-	});
 
-});
+		/* file input */ 
+		/* https://www.abeautifulsite.net/whipping-file-inputs-into-shape-with-bootstrap-3 */
+		$(function() {
+			$(document).on('change', ':file', function() {
+				var input = $(this), numFiles = input.get(0).files ? input.get(0).files.length : 1, label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+				input.trigger('fileselect', [numFiles, label]);
+			});
+			// We can watch for our custom `fileselect` event
+			$(document).ready( function() {
+				$(':file').on('fileselect', function(event, numFiles, label) {
+					var input = $(this).parents('.input-group').find(':text'), log = numFiles > 1 ? numFiles + ' files selected' : label;
+					if( input.length ) {
+						input.val(log);
+					} else {
+						if( log ) alert(log);
+					}
+				});
+			});
 
-/* ****************************************************************** */
-/* ************************************* */
-/* *** Read Write File in JavaScript *** */
-/* ************************************* */
+		});
 
-function scope2previewTable(inputObject) {
-	//this is used to display a cleaner table form of the log record	
-	var i, existingRecordLog, tdRecord, tableOut, timestamp;
-	var tablebottom ='<tr><td>{{audience.jobname}}</td><td>{{audience.jobid}}</td><td>{{audience.hours.workduration}}</td><td>{{audience.name}}</td><td>{{audience.address}}</td><td>{{audience.city}}</td><td>{{audience.state}}</td><td>{{audience.zip}}</td><td>{{audience.website}}</td><td>{{audience.attn}}</td><td>{{audience.attnemail}}</td><td>{{audience.phone}}</td><td>{{leads.leadtype}}</td><td>{{today | date}}</td></tr>';
-	
-	existingRecordLog = document.getElementById('logContainer').innerHTML;
-	timestamp = document.getElementById('coverletterTime').innerHTML;
-	
-	recordArray = Object.keys(inputObject).map(function (key) {return inputObject[key]; }); //convert object to array
-	
-	//Regex
-	existingRecordLog = existingRecordLog.replace(/\<\/tbody\>/gi, '');
-	existingRecordLog = existingRecordLog.replace(/\<\/table\>/gi, '');
-	//existingRecordLog = existingRecordLog.replace(tablebottom, '');
-	
-	tdRecord = "<tr>";	
-	for (i = 0; i < recordArray.length; i += 1) {
-		tdRecord += "<td>" + recordArray[i] + "</td>";
-	}
-	
-	//tablebottom = '';
-	
-	//tableOut = existingRecordLog + tdRecord + '<td>' + timestamp + '</td></tr>' + tablebottom + '</tbody></table>';
-	tableOut = existingRecordLog + tdRecord + '<td>' + timestamp + '</td></tr></tbody></table>';
-	document.getElementById('logContainer').innerHTML = tableOut;
-	//$('#logContainer').text(tableOut);
-}
+		/* ****************************************************************** */
+		/* ************************************* */
+		/* *** Read Write File in JavaScript *** */
+		/* ************************************* */
 
-var reader = new FileReader();
+		function scope2previewTable(inputObject) {
+			//this is used to display a cleaner table form of the log record	
+			var i, existingRecordLog, tdRecord, tableOut, timestamp;
+			var tablebottom ='<tr><td>{{audience.jobname}}</td><td>{{audience.jobid}}</td><td>{{audience.hours.workduration}}</td><td>{{audience.name}}</td><td>{{audience.address}}</td><td>{{audience.city}}</td><td>{{audience.state}}</td><td>{{audience.zip}}</td><td>{{audience.website}}</td><td>{{audience.attn}}</td><td>{{audience.attnemail}}</td><td>{{audience.phone}}</td><td>{{leads.leadtype}}</td><td>{{today | date}}</td></tr>';
 
-function checkFileAPI() {
-	'use strict';
-	if (window.File && window.FileReader && window.FileList && window.Blob) {
-		reader = new FileReader();
-		return true;
-	} else {
-		alert('The File APIs are not fully supported by your browser. Fallback required.');
-		return false;
-	}	
-}
-			
-function logLoadFile(filePath) {
-	'use strict';
-	var inputContents;
-	
-	reader.onload = function (e) {
-		inputContents = e.target.result;
-		inputContents = inputContents.replace(/\<\!(.*)\"en\"\>/g, '<tr>'); //remove header
-		inputContents = inputContents.replace(/\<\/html\>/g, ''); //remove footer
-		
-		document.getElementById('loginputPreviewDiv').innerHTML = inputContents;
-	}; //end onload()
-	reader.readAsText(filePath.files[0]);
-}
+			existingRecordLog = document.getElementById('logContainer').innerHTML;
+			timestamp = document.getElementById('coverletterTime').innerHTML;
 
-function inputLog2OutputLog() {
-	'use strict';
-	var inputlogDiv, outputlogDiv;
-	
-	inputlogDiv = document.getElementById('loginputPreviewDiv').innerHTML;	
-	inputlogDiv = inputlogDiv.replace(/\<table(.*)\<tbody\>/g, '<tr>'); //remove header
-	
-	outputlogDiv = document.getElementById('logContainer').innerHTML;
-	outputlogDiv = outputlogDiv.replace(/\<\/tbody\>/gi, ''); //remove footer
-	outputlogDiv = outputlogDiv.replace(/\<\/table\>/gi, '');
-	
-	document.getElementById('logContainer').innerHTML = outputlogDiv + inputlogDiv;
-}
+			recordArray = Object.keys(inputObject).map(function (key) {return inputObject[key]; }); //convert object to array
 
-function openInNewTab(url) {
-	var win = window.open(url, '_blank')
-	win.focus();
-}
+			//Regex
+			existingRecordLog = existingRecordLog.replace(/\<\/tbody\>/gi, '');
+			existingRecordLog = existingRecordLog.replace(/\<\/table\>/gi, '');
+			//existingRecordLog = existingRecordLog.replace(tablebottom, '');
 
-function inputResumeTemplateFile(filePath) {
-	'use strict';
-	var inputContents;
-	
-	reader.onload = function (e) {
-		inputContents = e.target.result;
-		
-		templateObject.resumeInput = inputContents;
-		
-		document.getElementById('resumeTemplate').innerHTML = templateObject.resumeInput;
-	}; //end onload()
-	reader.readAsText(filePath.files[0]);	
-}
-/* ******************************* */
-/* Save File and Finishing Output  */
-/* ******************************* */
+			tdRecord = "<tr>";	
+			for (i = 0; i < recordArray.length; i += 1) {
+				tdRecord += "<td>" + recordArray[i] + "</td>";
+			}
 
-function saveContents(textToWrite) {
-	/* intended for IE8 */
-	'use strict';
-	var oWin, success;
-	if (document.execCommand) {
-		oWin = window.open("about:blank", "_blank");
-		//To add a new line, you need to use <br>
-		oWin.document.writeln(textToWrite); //convert from list html to table html);
-		oWin.document.close();
-		//Need to specify the filename that we are going to set here
-		success = oWin.document.execCommand('SaveAs', true, "output.html");
-		oWin.close();
-	}
-}
+			//tablebottom = '';
 
-function destroyClickedElement(event) {
-	'use strict';
-	document.body.removeChild(event.target);
-}
-
-function saveHtmlAsFile(inputHtm, desiredFileName) {
-	'use strict';
-	/* https://jsfiddle.net/nekyouto/gokpfr00/ */
-	var fileNameToSaveAs, downloadLink, textFileAsBlob, textToWrite;
-	var formattingstyle = "<style> .tab { text-indent: 40px; } table, tr, th, td {text-align: center;} table {width: 100%;} </style>";
-	
-	inputHtm = formattingstyle +inputHtm ;
-	
-	textToWrite = inputHtm.replace(/\s\s+/g, ''); //remove mutiple spaces, this is Extra Overkill, but it is just housekeeping
-	desiredFileName = desiredFileName.replace(',', ' '); //remove coma from date
-	
-	//Check if browser supports Blob
-	if (window.Blob) {
-		textFileAsBlob = new Blob([textToWrite], { type: 'html' });
-		
-		//Need to specify the filename that we are going to set here
-		fileNameToSaveAs = desiredFileName + ".html";
-		downloadLink = document.createElement("a");
-		downloadLink.download = fileNameToSaveAs;
-		downloadLink.innerHTML = "Download File";
-		if (window.webkitURL != null) {
-			// Chrome allows the link to be clicked without actually adding it to the DOM.
-			downloadLink.href = window.webkitURL.createObjectURL(textFileAsBlob);
-		} else {
-			// Firefox requires the link to be added to the DOM before it can be clicked.
-			downloadLink.href = window.URL.createObjectURL(textFileAsBlob);
-			downloadLink.onclick = destroyClickedElement;
-			downloadLink.style.display = "none";
-			document.body.appendChild(downloadLink);
+			//tableOut = existingRecordLog + tdRecord + '<td>' + timestamp + '</td></tr>' + tablebottom + '</tbody></table>';
+			tableOut = existingRecordLog + tdRecord + '<td>' + timestamp + '</td></tr></tbody></table>';
+			document.getElementById('logContainer').innerHTML = tableOut;
+			//$('#logContainer').text(tableOut);
 		}
-		
-		if (navigator.msSaveBlob) {
-			navigator.msSaveBlob(textFileAsBlob, fileNameToSaveAs);
-		} else {
-			downloadLink.click();
+
+		var reader = new FileReader();
+
+		function checkFileAPI() {
+			'use strict';
+			if (window.File && window.FileReader && window.FileList && window.Blob) {
+				reader = new FileReader();
+				return true;
+			} else {
+				alert('The File APIs are not fully supported by your browser. Fallback required.');
+				return false;
+			}	
 		}
-		
-	} else {
-		/* Error/Solution Catch: used for IE8 */
-		saveContents(textToWrite);
-	}	
-}
 
-function printLog() {
-	var log = document.getElementById('logContainer').innerHTML;
-	var docTime = document.getElementById('coverletterTime').innerHTML;	
-	docTime = docTime.replace(/\,/, ' '); //remove comma
-	log ='<!DOCTYPE html><html lang="en">' + log + '</html>';	
-	saveHtmlAsFile(log, "SessionLog " + docTime);
-}
+		function logLoadFile(filePath) {
+			'use strict';
+			var inputContents;
+
+			reader.onload = function (e) {
+				inputContents = e.target.result;
+				inputContents = inputContents.replace(/\<\!(.*)\"en\"\>/g, '<tr>'); //remove header
+				inputContents = inputContents.replace(/\<\/html\>/g, ''); //remove footer
+
+				document.getElementById('loginputPreviewDiv').innerHTML = inputContents;
+			}; //end onload()
+			reader.readAsText(filePath.files[0]);
+		}
+
+		function inputLog2OutputLog() {
+			'use strict';
+			var inputlogDiv, outputlogDiv;
+
+			inputlogDiv = document.getElementById('loginputPreviewDiv').innerHTML;	
+			inputlogDiv = inputlogDiv.replace(/\<table(.*)\<tbody\>/g, '<tr>'); //remove header
+
+			outputlogDiv = document.getElementById('logContainer').innerHTML;
+			outputlogDiv = outputlogDiv.replace(/\<\/tbody\>/gi, ''); //remove footer
+			outputlogDiv = outputlogDiv.replace(/\<\/table\>/gi, '');
+
+			document.getElementById('logContainer').innerHTML = outputlogDiv + inputlogDiv;
+		}
+
+		function openInNewTab(url) {
+			var win = window.open(url, '_blank')
+			win.focus();
+		}
+
+		function inputResumeTemplateFile(filePath) {
+			'use strict';
+			var inputContents;
+
+			reader.onload = function (e) {
+				inputContents = e.target.result;
+
+				templateObject.resumeInput = inputContents;
+
+				document.getElementById('resumeTemplate').innerHTML = templateObject.resumeInput;
+			}; //end onload()
+			reader.readAsText(filePath.files[0]);	
+		}
+		/* ******************************* */
+		/* Save File and Finishing Output  */
+		/* ******************************* */
+
+		function saveContents(textToWrite) {
+			/* intended for IE8 */
+			'use strict';
+			var oWin, success;
+			if (document.execCommand) {
+				oWin = window.open("about:blank", "_blank");
+				//To add a new line, you need to use <br>
+				oWin.document.writeln(textToWrite); //convert from list html to table html);
+				oWin.document.close();
+				//Need to specify the filename that we are going to set here
+				success = oWin.document.execCommand('SaveAs', true, "output.html");
+				oWin.close();
+			}
+		}
+
+		function destroyClickedElement(event) {
+			'use strict';
+			document.body.removeChild(event.target);
+		}
+
+		function saveHtmlAsFile(inputHtm, desiredFileName) {
+			'use strict';
+			/* https://jsfiddle.net/nekyouto/gokpfr00/ */
+			var fileNameToSaveAs, downloadLink, textFileAsBlob, textToWrite;
+			var formattingstyle = "<style> .tab { text-indent: 40px; } table, tr, th, td {text-align: center;} table {width: 100%;} </style>";
+
+			inputHtm = formattingstyle +inputHtm ;
+
+			textToWrite = inputHtm.replace(/\s\s+/g, ''); //remove mutiple spaces, this is Extra Overkill, but it is just housekeeping
+			desiredFileName = desiredFileName.replace(',', ' '); //remove coma from date
+
+			//Check if browser supports Blob
+			if (window.Blob) {
+				textFileAsBlob = new Blob([textToWrite], { type: 'html' });
+
+				//Need to specify the filename that we are going to set here
+				fileNameToSaveAs = desiredFileName + ".html";
+				downloadLink = document.createElement("a");
+				downloadLink.download = fileNameToSaveAs;
+				downloadLink.innerHTML = "Download File";
+				if (window.webkitURL != null) {
+					// Chrome allows the link to be clicked without actually adding it to the DOM.
+					downloadLink.href = window.webkitURL.createObjectURL(textFileAsBlob);
+				} else {
+					// Firefox requires the link to be added to the DOM before it can be clicked.
+					downloadLink.href = window.URL.createObjectURL(textFileAsBlob);
+					downloadLink.onclick = destroyClickedElement;
+					downloadLink.style.display = "none";
+					document.body.appendChild(downloadLink);
+				}
+
+				if (navigator.msSaveBlob) {
+					navigator.msSaveBlob(textFileAsBlob, fileNameToSaveAs);
+				} else {
+					downloadLink.click();
+				}
+
+			} else {
+				/* Error/Solution Catch: used for IE8 */
+				saveContents(textToWrite);
+			}	
+		}
+
+		function printLog() {
+			var log = document.getElementById('logContainer').innerHTML;
+			var docTime = document.getElementById('coverletterTime').innerHTML;	
+			docTime = docTime.replace(/\,/, ' '); //remove comma
+			log ='<!DOCTYPE html><html lang="en">' + log + '</html>';	
+			saveHtmlAsFile(log, "SessionLog " + docTime);
+		}
 
 
-function printDocs(jobname, name, state) {
+		function printDocs(jobname, name, state) {
 
-	var emailDoc, coverletterDoc, resumeDoc, docTime, fileName;
-	
-	emailDoc = document.getElementById('emailletterTemplate').innerHTML;
-	coverletterDoc = document.getElementById('coverletterTemplate').innerHTML;
-	resumeDoc = document.getElementById('resumeTemplateHeader').innerHTML + document.getElementById('resumeTemplate').innerHTML;
-	
-	docTime = document.getElementById('coverletterTime').innerHTML;
-	docTime = docTime.replace(/\,/, ' '); //remove comma
-	
-	console.log("check");
-	fileName = jobname + "_" + name + "_" + state + "_" + docTime + "(Email Letter).html";
-	saveHtmlAsFile(emailDoc, fileName);
-	
-	fileName = jobname + "_" + name + "_" + jobname + "_" + docTime + "(Cover Letter Letter).html";
-	saveHtmlAsFile(coverletterDoc, fileName);
-	
-	fileName = jobname + "_" + state + "_"+jobname + "_" + docTime + "(Resume Letter).html";
-	saveHtmlAsFile(resumeDoc, fileName);
-	return;
-}
+			var emailDoc, coverletterDoc, resumeDoc, docTime, fileName;
 
-/* browser workarrounds */
-var myBrowserId;
+			emailDoc = document.getElementById('emailletterTemplate').innerHTML;
+			coverletterDoc = document.getElementById('coverletterTemplate').innerHTML;
+			resumeDoc = document.getElementById('resumeTemplateHeader').innerHTML + document.getElementById('resumeTemplate').innerHTML;
 
-function getBrowser() {
-	//https://jsfiddle.net/311aLtkz/
-	// Opera 8.0+
-    var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
-    // Firefox 1.0+
-    var isFirefox = typeof InstallTrigger !== 'undefined';
-    // Safari 3.0+ "[object HTMLElementConstructor]" 
-    var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || safari.pushNotification);
-    // Internet Explorer 6-11
-    var isIE = /*@cc_on!@*/false || !!document.documentMode;
-    // Edge 20+
-    var isEdge = !isIE && !!window.StyleMedia;
-    // Chrome 1+
-    var isChrome = !!window.chrome && !!window.chrome.webstore;
-    // Blink engine detection
-    var isBlink = (isChrome || isOpera) && !!window.CSS;
+			docTime = document.getElementById('coverletterTime').innerHTML;
+			docTime = docTime.replace(/\,/, ' '); //remove comma
+
+			console.log("check");
+			fileName = jobname + "_" + name + "_" + state + "_" + docTime + "(Email Letter).html";
+			saveHtmlAsFile(emailDoc, fileName);
+
+			fileName = jobname + "_" + name + "_" + jobname + "_" + docTime + "(Cover Letter Letter).html";
+			saveHtmlAsFile(coverletterDoc, fileName);
+
+			fileName = jobname + "_" + state + "_"+jobname + "_" + docTime + "(Resume Letter).html";
+			saveHtmlAsFile(resumeDoc, fileName);
+			return;
+		}
+
+		/* browser workarrounds */
+		var myBrowserId;
+
+		function getBrowser() {
+			//https://jsfiddle.net/311aLtkz/
+			// Opera 8.0+
+		    var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
+		    // Firefox 1.0+
+		    var isFirefox = typeof InstallTrigger !== 'undefined';
+		    // Safari 3.0+ "[object HTMLElementConstructor]" 
+		    var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || safari.pushNotification);
+		    // Internet Explorer 6-11
+		    var isIE = /*@cc_on!@*/false || !!document.documentMode;
+		    // Edge 20+
+		    var isEdge = !isIE && !!window.StyleMedia;
+		    // Chrome 1+
+		    var isChrome = !!window.chrome && !!window.chrome.webstore;
+		    // Blink engine detection
+		    var isBlink = (isChrome || isOpera) && !!window.CSS;
 
 
-	if (isChrome) {
-		return "<i class='fa fa-chrome' aria-hidden='true'  style='color:red'></i>";			
-	} else if (isOpera) {
-		return "<i class='fa fa-opera' aria-hidden='true'  style='color:red'></i>";	
-	} else if (isIE) {
-		return "<i class='fa fa-internet-explorer' aria-hidden='true'  style='color:#336699'></i>";
-	} else if (isSafari) {
-		return "<i class='fa fa-safari' aria-hidden='true'  style='color:#42d9f4'></i>";
-	} else if (isFirefox) {
-		return "<i class='fa fa-firefox' aria-hidden='true'  style='color:#E66000'></i>";	
-	} else if (isBlink) {
-		return "<i class='fa fa-chrome' aria-hidden='true' style='color:#6699ff'></i>";
-	}
-}
+			if (isChrome) {
+				return "<i class='fa fa-chrome' aria-hidden='true'  style='color:red'></i>";			
+			} else if (isOpera) {
+				return "<i class='fa fa-opera' aria-hidden='true'  style='color:red'></i>";	
+			} else if (isIE) {
+				return "<i class='fa fa-internet-explorer' aria-hidden='true'  style='color:#336699'></i>";
+			} else if (isSafari) {
+				return "<i class='fa fa-safari' aria-hidden='true'  style='color:#42d9f4'></i>";
+			} else if (isFirefox) {
+				return "<i class='fa fa-firefox' aria-hidden='true'  style='color:#E66000'></i>";	
+			} else if (isBlink) {
+				return "<i class='fa fa-chrome' aria-hidden='true' style='color:#6699ff'></i>";
+			}
+		}
 
-window.onload = function () {
-	'use strict';
-	//myCoverPage
-	document.getElementById('myCoverPageTitle').innerHTML += "| " + getBrowser(myCoverPage);	
-};
+		window.onload = function () {
+			'use strict';
+			//myCoverPage
+			document.getElementById('myCoverPageTitle').innerHTML += "| " + getBrowser(myCoverPage);	
+		};
 	</script>
 	
 	
