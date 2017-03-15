@@ -19,10 +19,9 @@
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 	
 	<style>
-		
-	/* *************************************************************** */
-	/* *** modify existing default html5, w3css, bootstrap styles  *** */
-	/* *************************************************************** */
+	/* ****************************************************** */
+	/* *** modify standard html5, bootsrap, w3css styles  *** */
+	/* ****************************************************** */
 	
 	body {
 	    font-family: monospace;
@@ -72,12 +71,11 @@
 	    font-size: 24px;
 	    width: 120px;
 	}
-
-	/* ************************************** */
-	/* *** my custom App specific styles  *** */
-	/* ************************************** */
-		
+	/* ********************************** */
+	/* *** my specific custom styles  *** */
+	/* ********************************** */
 	/* used in FOUC: Flash Of Unstyled Content */
+	
 	.starthidden-onpageload {
 	    /* visibility: hidden;  screen readers */
 	    display: none;
@@ -365,7 +363,7 @@
 	
 </head>
 
-<div class='loadedText-bottom w3-center'>
+<div id='loadingFooter' class='loadedText-bottom w3-center'>
 	<span style='color:red;' ng-if="false">Page Loading ... </span>
 	<span ng-if="true">Developed on Firefox, tests worked on Safari, IE and Opera, for desktop/laptop/tablet. SVG javascript animations are not 100% compatible with Chrome.</span>
 	
@@ -373,12 +371,10 @@
 	
 <body  ng-controller="myAppCtrl" ng-class="{'toggleBlackBackground': toggleClock }">
 
-	
-	
 <!-- splash screen -->
 	<div id='myCoverPage' class='vertical-center'>
 		<div id='myCoverPageTitle'  style='z-index: 3'>
-			<a ng-click="starApp()" style='z-index: 3' >Document Writer App</a>
+			<a ng-click="starApp()" style='z-index: 3'>Document Writer App</a>
 		</div>
 		<svg class='w3-right myGearsSvg' height="100%" width="750" viewbox="20 -80 600 400" style='z-index: 1'><use xlink:href="#svg2707" ></use></svg>
 	</div>
@@ -392,7 +388,7 @@
 				My Resume Template | 
 				<div class='toggleColors'>
 					<div class='btn w3-gray'  ng-click='tabShow(7)'>credits <i class="fa fa-thumb-tack" aria-hidden="true"></i></div>
-					<div class='btn'  ng-click='togglePaper = !togglePaper'>color <span class="glyphicon glyphicon-sunglasses"></span></div>
+					<div class='btn' ng-click='togglePaper = !togglePaper'>color <span class="glyphicon glyphicon-sunglasses"></span></div>
 				</div>
 			</div>
 			<div class="container-fluid">
@@ -458,19 +454,19 @@
 										<div class='col-sm-4'>
 											<div class="input-group">
 												<span class='input-group-addon span-width'>First:</span>
-												<input id="myfirstNameInput" name='userFirstName' placeholder='Michael' type='text' value="Michael" class='form-control' ng-model="user.firstName" ng-init="user.firstName = 'Michael'" ng-class="{'myInputValid': frmUser.userFirstName.$valid && frmUser.userFirstName.$dirty, 'myInputInvalid': frmUser.userFirstName.$invalid && frmUser.userFirstName.$dirty}" changed-field required>
+												<input id="myfirstNameInput" name='userFirstName' placeholder='Michael' type='text' value="Michael" class='form-control' ng-model="user.firstName" ng-init="user.firstName = 'Michael'" ng-class="{'myInputValid': frmUser.userFirstName.$valid && frmUser.userFirstName.$dirty, 'myInputInvalid': frmUser.userFirstName.$invalid && frmUser.userFirstName.$dirty}" changed-field required></input>
 											</div>
 										</div>
 										<div class='col-sm-4'>
 											<div class="input-group">
 												<span class='input-group-addon span-width'>Middle:</span>
-												<input id="mymiddleNameInput" name='"userMiddleName' placeholder='Jerome' type='text' value="Jerome" class='form-control' ng-model="user.middleName" ng-init="user.middleName = 'Jerome'" ng-class="{'myInputValid': frmUser.userMiddleName.$valid && frmUser.userMiddleName.$dirty, 'myInputInvalid': frmUser.userMiddleName.$invalid && frmUser.userMiddleName.$dirty}" changed-field>
+												<input id="mymiddleNameInput" name='"userMiddleName' placeholder='Jerome' type='text' value="Jerome" class='form-control' ng-model="user.middleName" ng-init="user.middleName = 'Jerome'" ng-class="{'myInputValid': frmUser.userMiddleName.$valid && frmUser.userMiddleName.$dirty, 'myInputInvalid': frmUser.userMiddleName.$invalid && frmUser.userMiddleName.$dirty}" changed-field></input>
 											</div>
 										</div>
 										<div class='col-sm-4'>
 											<div class="input-group">
 												<span class='input-group-addon span-width'>Last:</span>
-												<input id="mylastNameInput" ng-class="{'myInputValid': frmUser.userLastName.$valid && frmUser.userLastName.$dirty, 'myInputInvalid': frmUser.userLastName.$invalid && frmUser.userLastName.$dirty}" name='userLastName' placeholder='Todd' type='text' value="Todd" class='form-control' ng-model="user.lastName" ng-init="user.lastName = 'Todd'" changed-field required>
+												<input id="mylastNameInput" ng-class="{'myInputValid': frmUser.userLastName.$valid && frmUser.userLastName.$dirty, 'myInputInvalid': frmUser.userLastName.$invalid && frmUser.userLastName.$dirty}" name='userLastName' placeholder='Todd' type='text' value="Todd" class='form-control' ng-model="user.lastName" ng-init="user.lastName = 'Todd'" changed-field required></input>
 											</div>
 										</div>
 									</div>
@@ -479,13 +475,13 @@
 										<div class='col-sm-6'>
 											<div class="input-group">
 												<span class='input-group-addon span-width'>Street:</span>
-												<input id="myAddressInput" name='userAddress' placeholder='' type='text' value="" class='form-control' ng-model="user.address" ng-init="user.address = ''" ng-class="{'myInputValid': frmUser.userAddress.$valid && frmUser.userAddress.$dirty, 'myInputInvalid': frmUser.userAddress.$invalid && frmUser.userAddress.$dirty}" changed-field required>
+												<input id="myAddressInput" name='userAddress' placeholder='' type='text' value="" class='form-control' ng-model="user.address" ng-init="user.address = ''" ng-class="{'myInputValid': frmUser.userAddress.$valid && frmUser.userAddress.$dirty, 'myInputInvalid': frmUser.userAddress.$invalid && frmUser.userAddress.$dirty}" changed-field required></input>
 											</div>
 										</div>
 										<div class='col-sm-6'>
 											<div class="input-group">
 											<span class='input-group-addon span-width'>City:</span>
-											<input id="myCityInput" name='userCity' placeholder='' type='text' value="" class='form-control' ng-model="user.city" ng-init="user.city = ''" ng-class="{'myInputValid': frmUser.userCity.$valid && frmUser.userCity.$dirty, 'myInputInvalid': frmUser.userCity.$invalid && frmUser.userCity.$dirty}" changed-field>
+											<input id="myCityInput" name='userCity' placeholder='' type='text' value="" class='form-control' ng-model="user.city" ng-init="user.city = ''" ng-class="{'myInputValid': frmUser.userCity.$valid && frmUser.userCity.$dirty, 'myInputInvalid': frmUser.userCity.$invalid && frmUser.userCity.$dirty}" changed-field></input>
 											</div>
 										</div>
 									</div>
@@ -493,13 +489,13 @@
 										<div class='col-sm-6'>
 											<div class="input-group">
 												<span class='input-group-addon span-width'>State:</span>
-												<input id="myStateInput" name='userState' placeholder='FL' type='text' value="FL" class='form-control' ng-model="user.state" ng-init="user.state = 'FL'" ng-class="{'myInputValid': frmUser.userState.$valid && frmUser.userState.$dirty, 'myInputInvalid': frmUser.userState.$invalid && frmUser.userState.$dirty}" changed-field required>
+												<input id="myStateInput" name='userState' placeholder='FL' type='text' value="FL" class='form-control' ng-model="user.state" ng-init="user.state = 'FL'" ng-class="{'myInputValid': frmUser.userState.$valid && frmUser.userState.$dirty, 'myInputInvalid': frmUser.userState.$invalid && frmUser.userState.$dirty}" changed-field required></input>
 											</div>
 										</div>
 										<div class='col-sm-6'>
 											<div class="input-group">
 												<span class='input-group-addon span-width'>Zip:</span>
-												<input id="myZipInput" name='userZip' placeholder='xxxxx' type='text' value="xxxxx" class='form-control' ng-model="user.zip" ng-init="user.zip = 'xxxxx'" ng-class="{'myInputValid': frmUser.userZip.$valid && frmUser.userZip.$dirty, 'myInputInvalid': frmUser.userZip.$invalid && frmUser.userZip.$dirty}" changed-field>
+												<input id="myZipInput" name='userZip' placeholder='xxxxx' type='text' value="xxxxx" class='form-control' ng-model="user.zip" ng-init="user.zip = 'xxxxx'" ng-class="{'myInputValid': frmUser.userZip.$valid && frmUser.userZip.$dirty, 'myInputInvalid': frmUser.userZip.$invalid && frmUser.userZip.$dirty}" changed-field></input>
 											</div>
 										</div>
 									</div>
@@ -508,13 +504,13 @@
 										<div class='col-sm-6'>
 											<div class="input-group">
 												<span class='input-group-addon span-width'>Tel.:</span>
-												<input id="myPhoneInput" name='userPhone'placeholder='xxx-xxx-7338' type='tel' value="xxx-xxx-7338" class='form-control' ng-model="user.phone" ng-init="user.phone = 'xxx-xxx-7338'" ng-class="{'myInputValid': frmUser.userPhone.$valid && frmUser.userPhone.$dirty, 'myInputInvalid': frmUser.userPhone.$invalid && frmUser.userPhone.$dirty}" changed-field>
+												<input id="myPhoneInput" name='userPhone'placeholder='xxx-xxx-7338' type='tel' value="xxx-xxx-7338" class='form-control' ng-model="user.phone" ng-init="user.phone = 'xxx-xxx-7338'" ng-class="{'myInputValid': frmUser.userPhone.$valid && frmUser.userPhone.$dirty, 'myInputInvalid': frmUser.userPhone.$invalid && frmUser.userPhone.$dirty}" changed-field></input>
 											</div>
 										</div>
 										<div class='col-sm-6'>
 											<div class="input-group">
 												<span class='input-group-addon span-width'>Email.:</span>
-												<input id="myEmailInput" name='userEmail' placeholder='mezcel@mail.com' type='email' value='mezcel@mail.com' class='form-control' ng-model="user.email" ng-init="user.email = 'mezcel@mail.com'"  ng-class="{'myInputValid': frmUser.userEmail.$valid && frmUser.userEmail.$dirty, 'myInputInvalid': frmUser.userEmail.$invalid && frmUser.userEmail.$dirty}" changed-field>
+												<input id="myEmailInput" name='userEmail' placeholder='mezcel@mail.com' type='email' value='mezcel@mail.com' class='form-control' ng-model="user.email" ng-init="user.email = 'mezcel@mail.com'"  ng-class="{'myInputValid': frmUser.userEmail.$valid && frmUser.userEmail.$dirty, 'myInputInvalid': frmUser.userEmail.$invalid && frmUser.userEmail.$dirty}" changed-field></input>
 											</div>
 										</div>
 									</div>
@@ -523,7 +519,7 @@
 										<div class='col-sm-12'>
 											<div class="input-group">
 												<span class='input-group-addon span-width'>Url:</span>
-												<input id="myUrllInput" name='userMyUrl' placeholder='https://github.com/mezcel' type='url' value='https://github.com/mezcel' class='form-control' ng-model="user.myUrl" ng-init="user.myUrl = 'https://github.com/mezcel'" ng-class="{'myInputValid': frmUser.userMyUrl.$valid && frmUser.userMyUrl.$dirty, 'myInputInvalid': frmUser.userMyUrl.$invalid && frmUser.userMyUrl.$dirty}" changed-field>
+												<input id="myUrllInput" name='userMyUrl' placeholder='https://github.com/mezcel' type='url' value='https://github.com/mezcel' class='form-control' ng-model="user.myUrl" ng-init="user.myUrl = 'https://github.com/mezcel'" ng-class="{'myInputValid': frmUser.userMyUrl.$valid && frmUser.userMyUrl.$dirty, 'myInputInvalid': frmUser.userMyUrl.$invalid && frmUser.userMyUrl.$dirty}" changed-field></input>
 											</div>
 										</div>
 									</div>
@@ -545,14 +541,14 @@
 										<div class='col-sm-4'>										
 											<div class="input-group">
 												<span class='input-group-addon span-width'>Position:</span>
-												<input class='form-control' id="jobnameInput" name='audienceJobname' placeholder='Position Name' type='text' ng-model="audience.jobname" ng-init="audience.jobname = ''" ng-class="{'myInputValid': frmAudience.audienceJobname.$valid && frmAudience.audienceJobname.$dirty, 'myInputInvalid': frmAudience.audienceJobname.$invalid && frmAudience.audienceJobname.$dirty}" changed-field required>
+												<input class='form-control' id="jobnameInput" name='audienceJobname' placeholder='Position Name' type='text' ng-model="audience.jobname" ng-init="audience.jobname = ''" ng-class="{'myInputValid': frmAudience.audienceJobname.$valid && frmAudience.audienceJobname.$dirty, 'myInputInvalid': frmAudience.audienceJobname.$invalid && frmAudience.audienceJobname.$dirty}" changed-field required></input>
 											</div>
 											
 										</div>
 										<div class='col-sm-4'>
 											<div class="input-group">
 												<span class='input-group-addon span-width'>Job Code:</span>
-												<input class='form-control' id="jobidInput" name='audienceJobid ' placeholder='Position ID / software developer' type='text' value='' ng-model="audience.jobid" ng-init="audience.jobid = ''" ng-class="{'myInputValid': frmAudience.audienceJobid.$valid && frmAudience.audienceJobid.$dirty, 'myInputInvalid': frmAudience.audienceJobid.$invalid && frmAudience.audienceJobid.$dirty}"changed-field required>
+												<input class='form-control' id="jobidInput" name='audienceJobid ' placeholder='Position ID / software developer' type='text' value='' ng-model="audience.jobid" ng-init="audience.jobid = ''" ng-class="{'myInputValid': frmAudience.audienceJobid.$valid && frmAudience.audienceJobid.$dirty, 'myInputInvalid': frmAudience.audienceJobid.$invalid && frmAudience.audienceJobid.$dirty}"changed-field required></input>
 											</div>
 										</div>
 										<div class='col-sm-4'>
@@ -570,7 +566,7 @@
 										<div class='col-sm-6'>
 											<div class="input-group">
 												<span class='input-group-addon span-width'>Company Name:</span>
-												<input class='form-control' id="companynameInput" name='audienceName' placeholder='Company Name' type='text' value='' ng-model="audience.name" ng-init="audience.name = ''"  ng-class="{'myInputValid': frmAudience.audienceName.$valid && frmAudience.audienceName.$dirty, 'myInputInvalid': frmAudience.audienceName.$invalid && frmAudience.audienceName.$dirty}" changed-field required>
+												<input class='form-control' id="companynameInput" name='audienceName' placeholder='Company Name' type='text' value='' ng-model="audience.name" ng-init="audience.name = ''"  ng-class="{'myInputValid': frmAudience.audienceName.$valid && frmAudience.audienceName.$dirty, 'myInputInvalid': frmAudience.audienceName.$invalid && frmAudience.audienceName.$dirty}" changed-field required></input>
 											</div>
 										</div>
 									</div>
@@ -578,13 +574,13 @@
 										<div class='col-sm-6'>
 											<div class="input-group">
 												<span class='input-group-addon span-width'>Street:</span>
-												<input class='form-control' id="companyaddressInput" name='audienceAddress' placeholder='Street Address' type='text' value='' ng-model="audience.address" ng-init="audience.address = ''"  ng-class="{'myInputValid': frmAudience.audienceAddress.$valid && frmAudience.audienceAddress.$dirty, 'myInputInvalid': frmAudience.audienceAddress.$invalid && frmAudience.audienceAddress.$dirty}" changed-field required>
+												<input class='form-control' id="companyaddressInput" name='audienceAddress' placeholder='Street Address' type='text' value='' ng-model="audience.address" ng-init="audience.address = ''"  ng-class="{'myInputValid': frmAudience.audienceAddress.$valid && frmAudience.audienceAddress.$dirty, 'myInputInvalid': frmAudience.audienceAddress.$invalid && frmAudience.audienceAddress.$dirty}" changed-field required></input>
 											</div>
 										</div>
 										<div class='col-sm-6'>
 											<div class="input-group">
 												<span class='input-group-addon span-width'>City:</span>
-												<input class='form-control' id="companycityInput" name='audienceCity ' placeholder='Company City' type='text' value='' ng-model="audience.city" ng-init="audience.city = ''"  ng-class="{'myInputValid': frmAudience.audienceCity.$valid && frmAudience.audienceCity.$dirty, 'myInputInvalid': frmAudience.audienceCity.$invalid && frmAudience.audienceCity.$dirty}" changed-field required>
+												<input class='form-control' id="companycityInput" name='audienceCity ' placeholder='Company City' type='text' value='' ng-model="audience.city" ng-init="audience.city = ''"  ng-class="{'myInputValid': frmAudience.audienceCity.$valid && frmAudience.audienceCity.$dirty, 'myInputInvalid': frmAudience.audienceCity.$invalid && frmAudience.audienceCity.$dirty}" changed-field required></input>
 											</div>
 										</div>
 									</div>
@@ -592,13 +588,13 @@
 										<div class='col-sm-6'>
 											<div class="input-group">
 												<span class='input-group-addon span-width'>State:</span>
-												<input class='form-control' id="companystateInput" name='audienceState' placeholder='Company State' type='text' value='' ng-model="audience.state" ng-init="audience.state = ''" ng-class="{'myInputValid': frmAudience.audienceState.$valid && frmAudience.audienceState.$dirty, 'myInputInvalid': frmAudience.audienceState.$invalid && frmAudience.audienceState.$dirty}" changed-field required>
+												<input class='form-control' id="companystateInput" name='audienceState' placeholder='Company State' type='text' value='' ng-model="audience.state" ng-init="audience.state = ''" ng-class="{'myInputValid': frmAudience.audienceState.$valid && frmAudience.audienceState.$dirty, 'myInputInvalid': frmAudience.audienceState.$invalid && frmAudience.audienceState.$dirty}" changed-field required></input>
 											</div>
 										</div>
 										<div class='col-sm-6'>
 											<div class="input-group">
 												<span class='input-group-addon span-width'>Zip:</span>
-												<input class='form-control' id="companyzipInput" name='audienceZip' placeholder='Company zip' type='text' value='' ng-model="audience.zip" ng-init="audience.zip = ''" ng-class="{'myInputValid': frmAudience.audienceZip.$valid && frmAudience.audienceZip.$dirty, 'myInputInvalid': frmAudience.audienceZip.$invalid && frmAudience.audienceZip.$dirty}" changed-field required>
+												<input class='form-control' id="companyzipInput" name='audienceZip' placeholder='Company zip' type='text' value='' ng-model="audience.zip" ng-init="audience.zip = ''" ng-class="{'myInputValid': frmAudience.audienceZip.$valid && frmAudience.audienceZip.$dirty, 'myInputInvalid': frmAudience.audienceZip.$invalid && frmAudience.audienceZip.$dirty}" changed-field required></input>
 											</div>
 										</div>
 									</div>
@@ -606,7 +602,7 @@
 										<div class='col-sm-6'>
 											<div class="input-group">
 												<span class='input-group-addon span-width'>url:</span>
-												<input class='form-control' id="websiteInput" name='audienceWebsite' placeholder='Website URL' type='text' value='' ng-model="audience.website" ng-init="audience.website = ''" ng-class="{'myInputValid': frmAudience.audienceWebsite.$valid && frmAudience.audienceWebsite.$dirty, 'myInputInvalid': frmAudience.audienceWebsite.$invalid && frmAudience.audienceWebsite.$dirty}" changed-field required>
+												<input class='form-control' id="websiteInput" name='audienceWebsite' placeholder='Website URL' type='text' value='' ng-model="audience.website" ng-init="audience.website = ''" ng-class="{'myInputValid': frmAudience.audienceWebsite.$valid && frmAudience.audienceWebsite.$dirty, 'myInputInvalid': frmAudience.audienceWebsite.$invalid && frmAudience.audienceWebsite.$dirty}" changed-field required></input>
 											</div>
 										</div>
 									</div>
@@ -617,7 +613,7 @@
 										<div class='col-sm-6'>
 											<div class="input-group">
 												<span class='input-group-addon span-width'>Attn: Mr./Ms.:</span>
-												<input class='form-control' id="attnInput" name='audienceAttn' placeholder='Attn: or Hiring Manager' type='text' value='' ng-model="audience.attn" ng-init="audience.attn = ''" ng-class="{'myInputValid': frmAudience.audienceAttn.$valid && frmAudience.audienceAttn.$dirty, 'myInputInvalid': frmAudience.audienceAttn.$invalid && frmAudience.audienceAttn.$dirty}" changed-field required>
+												<input class='form-control' id="attnInput" name='audienceAttn' placeholder='Attn: or Hiring Manager' type='text' value='' ng-model="audience.attn" ng-init="audience.attn = ''" ng-class="{'myInputValid': frmAudience.audienceAttn.$valid && frmAudience.audienceAttn.$dirty, 'myInputInvalid': frmAudience.audienceAttn.$invalid && frmAudience.audienceAttn.$dirty}" changed-field required></input>
 											</div>
 										</div>
 									</div>
@@ -625,13 +621,13 @@
 										<div class='col-sm-6'>
 											<div class="input-group">
 												<span class='input-group-addon span-width'>Email:</span>
-												<input class='form-control' id="attnemailInput" name='audienceAttnemail' placeholder='name@email.com' type='text' value='' ng-model="audience.attnemail" ng-init="audience.attnemail = ''" ng-class="{'myInputValid': frmAudience.audienceAttnemail.$valid && frmAudience.audienceAttnemail.$dirty, 'myInputInvalid': frmAudience.audienceAttnemail.$invalid && frmAudience.audienceAttnemail.$dirty}" changed-field required>
+												<input class='form-control' id="attnemailInput" name='audienceAttnemail' placeholder='name@email.com' type='text' value='' ng-model="audience.attnemail" ng-init="audience.attnemail = ''" ng-class="{'myInputValid': frmAudience.audienceAttnemail.$valid && frmAudience.audienceAttnemail.$dirty, 'myInputInvalid': frmAudience.audienceAttnemail.$invalid && frmAudience.audienceAttnemail.$dirty}" changed-field required></input>
 											</div>
 										</div>
 										<div class='col-sm-6'>
 											<div class="input-group">
 												<span class='input-group-addon span-width'>Phone:</span>
-												<input class='form-control' id="attphoneInput" name='audiencePhone' placeholder='1-(###)-###-####' type='text' value='' ng-model="audience.phone" ng-init="audience.phone = ''" ng-class="{'myInputValid': frmAudience.audiencePhone.$valid && frmAudience.audiencePhone.$dirty, 'myInputInvalid': frmAudience.audiencePhone.$invalid && frmAudience.audiencePhone.$dirty}" changed-field required>
+												<input class='form-control' id="attphoneInput" name='audiencePhone' placeholder='1-(###)-###-####' type='text' value='' ng-model="audience.phone" ng-init="audience.phone = ''" ng-class="{'myInputValid': frmAudience.audiencePhone.$valid && frmAudience.audiencePhone.$dirty, 'myInputInvalid': frmAudience.audiencePhone.$invalid && frmAudience.audiencePhone.$dirty}" changed-field required></input>
 											</div>
 										</div>
 									</div>
@@ -640,7 +636,7 @@
 										<div class='col-sm-12'>
 											<div class="input-group ">
 												<span class='input-group-addon span-width'>Event, Setting, Web: </span>
-												<input class='form-control' id="attsituationsettingInput" name='audienceSituation' placeholder='Some kind of Event, Situation, or Setting' type='text' value='Stackoverflow Jobs' ng-model="audience.situation" ng-init="audience.situation = 'Stackoverflow Jobs'" ng-class="{'myInputValid': frmAudience.audienceSituation.$valid && frmAudience.audienceSituation.$dirty, 'myInputInvalid': frmAudience.audienceSituation.$invalid && frmAudience.audienceSituation.$dirty}" changed-field required>
+												<input class='form-control' id="attsituationsettingInput" name='audienceSituation' placeholder='Some kind of Event, Situation, or Setting' type='text' value='Stackoverflow Jobs' ng-model="audience.situation" ng-init="audience.situation = 'Stackoverflow Jobs'" ng-class="{'myInputValid': frmAudience.audienceSituation.$valid && frmAudience.audienceSituation.$dirty, 'myInputInvalid': frmAudience.audienceSituation.$invalid && frmAudience.audienceSituation.$dirty}" changed-field required></input>
 											</div>
 										</div>
 									</div>
@@ -840,10 +836,10 @@
 							<div class="input-group">
 								<label class="input-group-btn">
 									<span class="btn btn-primary">
-										Browse&hellip; <input id='logFile' onchange='logLoadFile(this)' type="file" style="display: none;" multiple>
+										Browse&hellip; <input id='logFile' onchange='logLoadFile(this)' type="file" style="display: none;" multiple></input>
 									</span>
 								</label>
-								<input type="text" class="form-control" readonly>
+								<input type="text" class="form-control" readonly></input>
 							</div>
 							
 							<hr>
@@ -855,7 +851,6 @@
 									</tbody>
 									</table>
 								</div>
-								<!-- <table><tbody></tbody></table> -->
 								<div class='w3-left'>
 									<button class="btn btn-primary w3-orange" onclick='restoreLastSession()'>Load a recient session</button> <a data-toggle='tooltip' data-placement='right' title="Restore log from a recient crash or unespected close."><i class="fa fa-info-circle"></i></a>
 								</div>
@@ -892,11 +887,13 @@
 					</div>
 				</div>
 				
-				<div id='mytab1' ng-show="tabclassActive(8)">
+				<div ng-show="tabclassActive(8)">
 					<div class="my-preview-font preview-container">
 						<div class='container-fluid'>
-						<h3>Resume Quote:</h3>
-						<i>"Think about it: if you describe yourself as 'a hardworking professional with an in-depth understanding of internet marketing,' your resume will sound like lots of others. Plus the recruiter has no way of figuring out how truthful you’re being."</i> - Louise Fletcher, <u>The simple resume writing hack that will transform your job search</u> <b><a href='http://www.blueskyresumes.com/blog/the-simple-resume-writing-hack-that-will-transform-your-job-search/'>Blue Sky Resumes<a></b></div>
+							<h3>Resume Quote:</h3>
+							<i>"Think about it: if you describe yourself as 'a hardworking professional with an in-depth understanding of internet marketing,' your resume will sound like lots of others. Plus the recruiter has no way of figuring out how truthful you’re being."</i> - Louise Fletcher, <u>The simple resume writing hack that will transform your job search</u> <b>
+							<a href='http://www.blueskyresumes.com/blog/the-simple-resume-writing-hack-that-will-transform-your-job-search/'>Blue Sky Resumes</a></b>
+						</div>
 					</div>
 				</div>
 				
@@ -916,13 +913,13 @@
 										<div class='col-sm-6'>
 											<div class="input-group">
 												<span class='input-group-addon span-width'>lead:</span>
-												<input id="leaddescriptionInput1" name='leadsLeadtype' placeholder='contact source' type='text' value="" class='form-control' ng-model="leads.leadtype" ng-init="leads.leadtype = 'Stackoverflow Jobs'" ng-class="{'myInputValid': frmEmailLetter.leadsLeadtype.$valid && frmEmailLetter.leadsLeadtype.$dirty, 'myInputInvalid': frmEmailLetter.leadsLeadtype.$invalid && frmEmailLetter.leadsLeadtype.$dirty}"changed-field required>
+												<input id="leaddescriptionInput1" name='leadsLeadtype' placeholder='contact source' type='text' value="" class='form-control' ng-model="leads.leadtype" ng-init="leads.leadtype = 'Stackoverflow Jobs'" ng-class="{'myInputValid': frmEmailLetter.leadsLeadtype.$valid && frmEmailLetter.leadsLeadtype.$dirty, 'myInputInvalid': frmEmailLetter.leadsLeadtype.$invalid && frmEmailLetter.leadsLeadtype.$dirty}"changed-field required></input>
 											</div>
 										</div>
 										<div class='col-sm-6'>
 											<div class="input-group">
 												<span class='input-group-addon span-width'>research:</span>
-												<input id="leaddescriptionInput2" name='leadsFollowup' placeholder='follow-up method' type='text' value="" class='form-control' ng-model="leads.followup" ng-init="leads.followup = ''" ng-class="{'myInputValid': frmEmailLetter.leadsFollowup.$valid, 'myInputInvalid': frmEmailLetter.leadsFollowup.$invalid}"changed-field required>
+												<input id="leaddescriptionInput2" name='leadsFollowup' placeholder='follow-up method' type='text' value="" class='form-control' ng-model="leads.followup" ng-init="leads.followup = ''" ng-class="{'myInputValid': frmEmailLetter.leadsFollowup.$valid, 'myInputInvalid': frmEmailLetter.leadsFollowup.$invalid}"changed-field required></input>
 											</div>
 										</div>
 									</div>
@@ -1159,8 +1156,6 @@
 		var coverletterObject = {template1:"", template2:"", template3:""};
 		var templateObject = {resumeInput:"", resumeDefault:"<p><b>Services</b></p><p><center><table><tr><td>Embedded System Analysis</td><td>Debugging &amp; Troubleshooting</td><td>Testing &amp; Documentation</td></tr><tr><td>Software Development</td><td>Requirements Management</td><td>Project Management</td></tr><tr><td>Coding &amp; Scripting</td><td>GUI Design</td><td>Database Design</td></tr></table></center></p><p><b>Technology Summary</b></p><p><u>Programming</u>: C, C ++, C#, XML, CSV, SVG, MySQL, MSSql, HTML, VB.Net, ASP.NET, ADO.NET, LINQ, Java, JavaScript, AngularJS, jQuery, CSS, and PHP</p><p><u>Development Tools</u>: MS Visual Studio 2012, MS Sql Server Management Studio, MySql Workbench, WAMP Server, Oracle NetBeans IDE, Notepad ++, Inkscape and Sketchup (CAD), MS Office Suite</p><p><u>Systems</u>: Windows, Dot NET</p><p><b>Education</b></p><p><u>Gannon University Erie, PA | B.S. Electrical/Computer Engineering, 2006</u><br>Electrical Engineering, Computer Engineering, Embedded SystemsPublished Scientific Journal on Artificial Intelligence</p><p></p><p><u>TCC, Tallahassee, FL | (Continued Education) Environmental Science, 2014</u><br>Environmental Systems, Plant Biology, Environmental Law/Regulations</p><p><u>Gannon University Erie, PA | (Masters Schooling) Information Analytics, 2015</u><br>Database Management, Requirements for Software Systems</p><p><b>Professional Experience</b></p><p><u>Independent Green Technologies (IGT) - Tallahassee, FL</u><br>CAD Specialist, 2014</p><p>My responsibility in the company focused on using computer aided design (CAD) tools to model price and cost projections for large-scale commercial organizations and residential stakeholders. The models were used to appraise and simulate design efficiency and feasibility to construct.</p><p><u>United States Coast Guard Cutter Mustang (WPB 1310) - Seward, AK</u><br>Machinery Technician, 2011-2013</p><p>As a member of a ship's engineering staff, I took the initiative to enhance our machinery related catalog and inventory database. Because of this initiative, enhancements were implemented service wide on that ship class. I used MS Access to develop a parts inventory catalog for EATON/Aeroquip brand high pressure hoses. This application was used to manage the preventative maintenance schedule, parts and pricing, and for ordering replacements for worn or damaged equipment and accessory parts.</p><p><u>Coast Guard Station Venice - Venice, LA</u><br>Search and Rescue, Boarding Officer, 2008-2011</p><p>In conjunction with search and rescue response duties, I developed a computer application to enhance safety and productivity. I used my computer technology skills to develop an HTML, CSS and RSS feed based application to gather weather, sea state and tidal information to assist in risk assessment for boats deploying in search and rescue operations.</p>"};
 
-		//var recieverBtnEnterBool = false;
-
 		var tabIndex = null;
 
 		app.controller('myAppCtrl', ['$scope', function($scope) {
@@ -1187,7 +1182,8 @@
 				$('#myCoverPage').hide(); 
 				$('#myCoverPage').css('display: none;');
 				$('#mainContainer').show();
-				$('.loadedText-bottom').css('display: none;');
+				$('#loadingFooter').hide(); 
+				$('#loadingFooter').css('display: none;');
 			};
 			
 			/* toggle clock colors */
@@ -1386,8 +1382,6 @@
 			}
 		});
 		
-
-
 		/* file input */ 
 		/* https://www.abeautifulsite.net/whipping-file-inputs-into-shape-with-bootstrap-3 */
 		$(function() {
@@ -1395,7 +1389,7 @@
 				var input = $(this), numFiles = input.get(0).files ? input.get(0).files.length : 1, label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
 				input.trigger('fileselect', [numFiles, label]);
 			});
-			// We can watch for our custom `fileselect` event
+			// watch for custom `fileselect` event
 			$(document).ready( function() {
 				$(':file').on('fileselect', function(event, numFiles, label) {
 					var input = $(this).parents('.input-group').find(':text'), log = numFiles > 1 ? numFiles + ' files selected' : label;
@@ -1414,7 +1408,6 @@
 		/* ************************************* */
 		
 		counterAnalytics = function() {
-			//var value = $('#emailletterTemplate').val();
 			var value =  $('#emailletterTemplate').html();
 
 			if (value.length == 0) {
@@ -1440,7 +1433,6 @@
 			var emailletterAnalytics = value.length;
 			$('#emailletterAnalytics').append(countDocChars(value));
 		};
-		
 		
 		/* word count analytics */
 		$(document).ready(function() {
@@ -1586,6 +1578,7 @@
 			}; //end onload()
 			reader.readAsText(filePath.files[0]);	
 		}
+		
 		/* ******************************* */
 		/* Save File and Finishing Output  */
 		/* ******************************* */
@@ -1687,7 +1680,6 @@
 		/* Session Browser Storage         */
 		/* ******************************* */
 
-		
 		function setSession(tableStr) {
 			//sessionStorage.setItem('sessonsaveLogVar', tableStr);
 			localStorage.setItem('sessonsaveLogVar', tableStr);
@@ -1716,6 +1708,7 @@
 			setSession(sessionCache);
 			console.log(sessionCache);
 		}
+		
 		function restoreLastSession() {
 			'use strict';
 			var cacheStrIn = getSession('sessonsaveLogVar');
@@ -1766,7 +1759,6 @@
 			// Blink engine detection
 			var isBlink = (isChrome || isOpera) && !!window.CSS;
 
-
 			if (isChrome) {
 				return "<i class='fa fa-chrome' aria-hidden='true'  style='color:red' ng-if='true'>Chrome</i>";			
 			} else if (isOpera) {
@@ -1785,7 +1777,8 @@
 		window.onload = function () {
 			'use strict';
 			//myCoverPage
-			document.getElementById('myCoverPageTitle').innerHTML += "| " + getBrowser(myCoverPage);	
+			//document.getElementById('myCoverPageTitle').innerHTML += "| " + getBrowser(myCoverPage);
+			document.getElementById('myCoverPageTitle').innerHTML += "| " + getBrowser();
 		};
 	</script>
 	
