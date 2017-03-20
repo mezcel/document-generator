@@ -1,0 +1,595 @@
+/* Page and Columns Display */
+
+body {
+	padding: 0px;
+	margin: 0px;
+	background-color: #f4f4f4;
+	top: 0px;
+	bottom: 0px;
+	height: 100px;
+	width: 100%;
+}
+
+.roundedbottomcorners {
+	border-radius: 0px 0px 8px 8px;
+}
+
+.mask{
+	position: relative;
+	overflow: hidden;
+	margin: 0px auto;
+	width: 100%;
+	background-color: #f4f4f4;
+	visibility:hidden; /* initial page load */
+}
+
+.header{
+	float: left;
+	width: 100%;
+	background-color: #f4f4f4;
+	text-align: center;
+	padding: 5px;
+}
+
+.colleft{
+	position: relative;
+	width: 100%;
+	right: 33%;
+	background-color: #f4f4f4;
+}
+
+.col1{
+	position: relative;
+	overflow: hidden;
+	float: left;
+	width: 31%;
+	left: 101%;
+	background-color: #f4f4f4;
+	
+}
+
+.col2{
+	position: relative;
+	overflow: hidden;
+	float: left;
+	width: 65%;
+	left: 3%;
+	background-color: #f4f4f4;
+	
+}
+.footer{
+	float: left;
+	width: 100%;
+	background-color: #f4f4f4
+	visibility: hidden;
+	display: none;
+}      
+
+/* **** User Interface Display ******** */
+
+.clockled {
+	color: cyan;
+	background-color: #383838;
+}
+.highlightChange {
+	background-color: yellow;
+}
+
+.tab {
+	text-indent: 40px;
+}
+
+.tabIndent {
+	margin-left: 40px;
+}
+
+table, tr, th, td {
+	text-align: center;
+} 
+
+table {
+	width: 100%;
+}
+
+.logBorders {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	border-collapse: collapse;
+	width: 200%;
+}				
+
+.customParagrapInput {
+	width: 100%;
+	max-width: 100%;
+	background-color: #f2f2f2;
+}
+.customParagrapInput:focus {
+	border: 1px solid red;
+	box-shadow: 0 0 10px;
+	background-color: LightCyan;
+}
+
+.myinputstyle {                   
+	width: 65%;
+	background-color: #f2f2f2;
+	box-sizing: border-box;
+	font-style: normal;
+	font-weight: normal;
+	color: #0059b3;
+}
+
+.myinputstyle: focus {
+	background-color: LightCyan;
+	font-weight: bold;
+}
+
+.mydropdownstyle {
+	width: 80%;
+	background-color: #f2f2f2;
+}
+
+input:focus {
+	background-color: LightCyan;
+	font-weight: bold;
+}
+
+.roundedCorners{
+	border-radius: 8px;
+}
+
+.signatureSpace {
+	border: 0;
+	height: 30px;
+}
+
+a {
+	text-decoration: none;
+}
+p {
+	margin:0;
+}
+
+#logContainer {
+	overflow: scroll;
+}
+
+.buttonBorder {
+	border-bottom: solid;
+	border-color: white;
+	border-width: 1px;
+}
+
+#topCornerDiv {
+	display: none;
+	visibility: hidden;
+}
+
+.littleFont {
+	font-size: small;
+}
+
+/* popup style */
+
+#fadeSplash { display: block;}
+#lightSplash {display: block; }
+
+.black_overlay {
+	display: none;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 111%; /* trial and error */
+	background-color: #333333;
+	z-index: 100;
+	opacity: 1;
+}
+
+.white_content {
+	display: none;
+	position: absolute;
+	top: 25%; /* trial and error */
+	left: 25%;
+	width: 50%;
+	height: 300px; /* trial and error */
+	padding: 16px;
+	border: 16px solid #262626;
+	background-color: white;
+	z-index: 101;
+}
+
+#progressbar {
+	height: 26px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 200px;
+	background: rgba(159, 159, 159, 0.5);
+	border-radius: 20px;
+	margin: -20px 0 0 -100px;
+	padding: 0px;
+}
+#loading {
+	transition: all 500ms ease;
+	height: 20px;
+	width: calc(100% - 10px);
+	border-radius: 8px;
+	background: lime;
+	position: absolute;
+	margin: 3px;
+	display: inline-block;
+	animation: load 5s ease;
+}
+#load {
+	font-family: Arial;
+	font-weight: bold;
+	text-align: center;
+	margin-top: -30px;
+}
+
+/* *** marquee *** */
+.marquee {
+	width: 100%;
+	margin: 0;
+	overflow: hidden;
+	white-space: nowrap;
+	box-sizing: border-box;
+	animation: marquee 40s linear infinite;
+	color: gray;
+}
+
+.marquee:hover {
+	animation-play-state: paused
+}
+
+/* Make marquee move */
+@keyframes marquee {
+	0%   { text-indent: 27.5em }
+	100% { text-indent: -105em }
+}
+
+@media only screen and (max-width:1150px) {
+	.col1 { 
+		display: none;
+	}
+	.col2 {
+		width: 100%;
+		left: 0%;
+	}
+	.colleft {
+		width: 100%;
+		right: 0%;
+	}
+
+	#topCornerDiv {
+		position: absolute;
+		top: 1em;
+		right: 1em;
+		visibility: visible;
+		display: block;
+		z-index: 4;
+	}
+}
+
+@keyframes load {
+	0% {
+		background: red;
+		width: 0%;
+	}
+	25% {
+		background: red;
+		width: 40%;
+	}
+	50% {
+		background-color: orange;
+		width: 88%;
+	}
+	75% {
+		background-color: lime;
+	}
+	80% {
+		background-color: lime;
+		
+	}
+	100% {
+		background-color: lime;
+		width: 95%;
+	}
+}/* Page and Columns Display */
+
+body {
+	padding: 0px;
+	margin: 0px;
+	background-color: #f4f4f4;
+	top: 0px;
+	bottom: 0px;
+	height: 100px;
+	width: 100%;
+}
+
+.roundedbottomcorners {
+	border-radius: 0px 0px 8px 8px;
+}
+
+.mask{
+	position: relative;
+	overflow: hidden;
+	margin: 0px auto;
+	width: 100%;
+	background-color: #f4f4f4;
+	visibility:hidden; /* initial page load */
+}
+
+.header{
+	float: left;
+	width: 100%;
+	background-color: #f4f4f4;
+	text-align: center;
+	padding: 5px;
+}
+
+.colleft{
+	position: relative;
+	width: 100%;
+	right: 33%;
+	background-color: #f4f4f4;
+}
+
+.col1{
+	position: relative;
+	overflow: hidden;
+	float: left;
+	width: 31%;
+	left: 101%;
+	background-color: #f4f4f4;
+	
+}
+
+.col2{
+	position: relative;
+	overflow: hidden;
+	float: left;
+	width: 65%;
+	left: 3%;
+	background-color: #f4f4f4;
+	
+}
+.footer{
+	float: left;
+	width: 100%;
+	background-color: #f4f4f4
+	visibility: hidden;
+	display: none;
+}      
+
+/* **** User Interface Display ******** */
+
+.clockled {
+	color: cyan;
+	background-color: #383838;
+}
+.highlightChange {
+	background-color: yellow;
+}
+
+.tab {
+	text-indent: 40px;
+}
+
+.tabIndent {
+	margin-left: 40px;
+}
+
+table, tr, th, td {
+	text-align: center;
+} 
+
+table {
+	width: 100%;
+}
+
+.logBorders {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	border-collapse: collapse;
+	width: 200%;
+}				
+
+.customParagrapInput {
+	width: 100%;
+	max-width: 100%;
+	background-color: #f2f2f2;
+}
+.customParagrapInput:focus {
+	border: 1px solid red;
+	box-shadow: 0 0 10px;
+	background-color: LightCyan;
+}
+
+.myinputstyle {                   
+	width: 65%;
+	background-color: #f2f2f2;
+	box-sizing: border-box;
+	font-style: normal;
+	font-weight: normal;
+	color: #0059b3;
+}
+
+.myinputstyle: focus {
+	background-color: LightCyan;
+	font-weight: bold;
+}
+
+.mydropdownstyle {
+	width: 80%;
+	background-color: #f2f2f2;
+}
+
+input:focus {
+	background-color: LightCyan;
+	font-weight: bold;
+}
+
+.roundedCorners{
+	border-radius: 8px;
+}
+
+.signatureSpace {
+	border: 0;
+	height: 30px;
+}
+
+a {
+	text-decoration: none;
+}
+p {
+	margin:0;
+}
+
+#logContainer {
+	overflow: scroll;
+}
+
+.buttonBorder {
+	border-bottom: solid;
+	border-color: white;
+	border-width: 1px;
+}
+
+#topCornerDiv {
+	display: none;
+	visibility: hidden;
+}
+
+.littleFont {
+	font-size: small;
+}
+
+/* popup style */
+
+#fadeSplash { display: block;}
+#lightSplash {display: block; }
+
+.black_overlay {
+	display: none;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 111%; /* trial and error */
+	background-color: #333333;
+	z-index: 100;
+	opacity: 1;
+}
+
+.white_content {
+	display: none;
+	position: absolute;
+	top: 25%; /* trial and error */
+	left: 25%;
+	width: 50%;
+	height: 300px; /* trial and error */
+	padding: 16px;
+	border: 16px solid #262626;
+	background-color: white;
+	z-index: 101;
+}
+
+#progressbar {
+	height: 26px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 200px;
+	background: rgba(159, 159, 159, 0.5);
+	border-radius: 20px;
+	margin: -20px 0 0 -100px;
+	padding: 0px;
+}
+#loading {
+	transition: all 500ms ease;
+	height: 20px;
+	width: calc(100% - 10px);
+	border-radius: 8px;
+	background: lime;
+	position: absolute;
+	margin: 3px;
+	display: inline-block;
+	animation: load 5s ease;
+}
+#load {
+	font-family: Arial;
+	font-weight: bold;
+	text-align: center;
+	margin-top: -30px;
+}
+
+/* *** marquee *** */
+.marquee {
+	width: 100%;
+	margin: 0;
+	overflow: hidden;
+	white-space: nowrap;
+	box-sizing: border-box;
+	animation: marquee 40s linear infinite;
+	color: gray;
+}
+
+.marquee:hover {
+	animation-play-state: paused
+}
+
+/* Make marquee move */
+@keyframes marquee {
+	0%   { text-indent: 27.5em }
+	100% { text-indent: -105em }
+}
+
+@media only screen and (max-width:1150px) {
+	.col1 { 
+		display: none;
+	}
+	.col2 {
+		width: 100%;
+		left: 0%;
+	}
+	.colleft {
+		width: 100%;
+		right: 0%;
+	}
+
+	#topCornerDiv {
+		position: absolute;
+		top: 1em;
+		right: 1em;
+		visibility: visible;
+		display: block;
+		z-index: 4;
+	}
+}
+
+@keyframes load {
+	0% {
+		background: red;
+		width: 0%;
+	}
+	25% {
+		background: red;
+		width: 40%;
+	}
+	50% {
+		background-color: orange;
+		width: 88%;
+	}
+	75% {
+		background-color: lime;
+	}
+	80% {
+		background-color: lime;
+		
+	}
+	100% {
+		background-color: lime;
+		width: 95%;
+	}
+}
