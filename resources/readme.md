@@ -1,6 +1,5 @@
 # Resources Folder
 
-
 ##Local Storage Paths:  angular, bootstap, fontawesome, and w3Css were taken and unmodifed from their opensource directories
 
 ### Stylesheets
