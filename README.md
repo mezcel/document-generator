@@ -8,4 +8,4 @@ The version, as it is now, is tailored to me.
 
 v1 - JavaScript, Html 5
 
-v2 - jQuery Angular Bootstrap
+v2 - jQuery Angular, Bootstrap, SVG
