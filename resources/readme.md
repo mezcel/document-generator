@@ -7,8 +7,7 @@
 
 * type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
 * href="http://www.w3schools.com/lib/w3.css" rel="stylesheet"
-* href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-* rel="stylesheet" type="text/css" href="myStyleSheet.css"
+* href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
 
 ### Scripts
 * type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"
