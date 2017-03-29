@@ -1,0 +1,70 @@
+{
+	"senderTemplateJSON":
+	{
+		"firstName": "",
+		"middleName": "",
+		"lastName": "",
+		"address": "",
+		"city": "",
+		"state": "",
+		"zip": "",
+		"phone": "",
+		"email": "",
+		"myUrl": ""
+	},
+	"receiverTemplateJSON":
+	{
+		"jobname": "",
+		"jobid": "",
+		"hours": 
+		[
+			{"id":0, "workduration": "item1"}, 
+			{"id":1, "workduration": "item2"}, 
+			{"id":2, "workduration": "item3"}
+		],
+		"name": "",
+		"address": "",
+		"city": "",
+		"state": "",
+		"zip": "",
+		"website": "",
+		"attn": "",
+		"attnemail": "",
+		"phone":"",
+		"situation":""
+	},
+	"environmentTemplateJSON":
+	{
+		"companydescription": "",
+		"companyphilosophy": "",
+		"companycustomers": "",
+		"companydistinguish": ""
+	},
+	"relationshipTemplateJSON":
+	{
+		"applicationidentity": "",
+		"skillarray": "",
+		"knowledgearray": "",
+		"abilityarray": ""
+	},
+	"emailletterTemplateJSON":
+	{
+		"lead":"",
+		"research":"",
+		"header":"A placeholder for a email header imported from a JSON file.",
+		"body":"A placeholder for a email body imported from a JSON file.",
+		"footer":"A placeholder for a email footer imported from a JSON file."
+	},
+	"resumeTemplateJSON":
+	{
+		"header":"A placeholder for a resume header imported from a JSON file.",
+		"body":"A placeholder for a resume body imported from a JSON file.",
+		"footer":"A placeholder for a resume footer imported from a JSON file."
+	},
+	"coverletterTemplateJSON":
+	{
+		"header":"A placeholder for a cover letter header imported from a JSON file.",
+		"body":"A placeholder for a cover letter header imported from a JSON file.",
+		"footer":"A placeholder for a cover letter footer imported from a JSON file."
+	}
+}
