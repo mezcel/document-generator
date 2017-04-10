@@ -13,7 +13,7 @@ Both versions, as it is now, are tailored to me and the functional task I was tr
  
 This application was developed as a tool to help me generate personalized resumes, cover letters and email greetings. Many employers hire through recruiting agencies and automated website application forms. My application is tailored for applying  to small startup companies where cold call walk-in interviews and job applications are possible.
  
-### I wanted to make an App which I could use in the public libraries throughout the country:
+### I wanted to make an App which I could use in the public libraries and company lobby waiting areas throughout the country:
  
 I made this app intending to use the Internet provided by different public libraries throughout the country. Many public computers, and email providers in general, restrict anonymous users from sending or installing program files via email.  Despite this, markup language file formats are acceptable file attachments. My file is written as a single HTML file so I can open it on any standard computer (Mac or PC), which has email access.
 
