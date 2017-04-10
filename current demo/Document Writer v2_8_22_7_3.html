@@ -2357,152 +2357,152 @@
 			// App Factory
 			app.factory('myAppFactoryJson', function(){
 				var factoryObj = {
-	"senderTemplateJSON":
-	{
-		"firstName": "",
-		"middleName": "",
-		"lastName": "",
-		"address": "",
-		"city": "",
-		"state": "",
-		"zip": "",
-		"phone": "",
-		"email": "",
-		"myUrl": ""
-	},
-	"receiverTemplateJSON":
-	{
-		"jobname": "",
-		"jobid": "",
-		"hours":  [ {"id":'0', "workduration" : "temp"}, {"id":'1', "workduration" : "full-time"}, { "id":'2', "workduration" : "part-time" }, { "id":'3', "workduration" : "hourly"}, { "id":'4', "workduration" : "seasonal"}, { "id":'5', "workduration" : "salary"} ],
-		"name": "",
-		"address": "",
-		"city": "",
-		"state": "",
-		"zip": "",
-		"website": "",
-		"attn": "",
-		"attnemail": "",
-		"phone":"",
-		"situation":""
-	},
-	"environmentTemplateJSON":
-	{
-		"companydescription": "",
-		"companyphilosophy": "",
-		"companycustomers": "",
-		"companydistinguish": ""
-	},
-	"relationshipTemplateJSON":
-	{
-		"applicationidentity": "",
-		"skillarray": "",
-		"knowledgearray": "",
-		"abilityarray": ""
-	},
-	"emailletterTemplateJSON":
-	{
-		"leadtype":"Stackoverflow Jobs",
-		"followup":"web research",
-		"header":"",
-		"body":"<p class=\"w3-left-align\">{{today | date}}</p> <br> Dear <span class=\"highlighterDiv\">{{audience.attn}}</span>, <br><br> <p class=\"tab\">My name is <span class=\"highlighterDiv\">{{user.firstName}}</span> <span class=\"highlighterDiv\">{{user.lastName}}</span>. I learned about your company, <span class=\"highlighterDiv\">{{audience.name}}</span>, through <span class=\"highlighterDiv\">{{leads.leadtype}}</span>. I understand you are currently in the process of hiring a <span class=\"highlighterDiv\">{{audience.jobname}}</span>. I am seeking employment in this discipline of technology. Based on what I learned from <span class=\"highlighterDiv\">{{leads.followup}}</span>, I see that your company <span class=\"highlighterDiv\">{{environmentsetting.companydescription}}</span>. Your customers <span class=\"highlighterDiv\">{{environmentsetting.companycustomers}}</span>. You are looking for talent who have skills in <span class=\"highlighterDiv\">{{desirability.skillarray}} </span>. Your organization <span class=\"highlighterDiv\">{{environmentsetting.companyphilosophy}}</span>. <span class=\"highlighterDiv\">{{environmentsetting.companydistinguish}}</span>. This appeals to me, and I would like the opportunity to try out for your team.</p> <p class=\"tab\"> May I send you my cover letter and resume? I hope it may inspire talking points regarding my eligibility for this position. My confidence, as an applicant, is directed at an entry-level position, but my abilities are perhaps reflective of a mid-level position. I would like to have a conversation about the work culture at <span class = \"highlighterDiv\">{{audience.name}}</span> and learn what you,<span class = \"highlighterDiv\">{{audience.attn}}</span>, believe are key ingredients for employee success at your organization.</p> <br> Respectfully,<br> <span class = \"highlighterDiv\">{{user.firstName}}</span> <span class = \"highlighterDiv\"> {{user.middleName}} </span> <span class = \"highlighterDiv\">{{user.lastName}}</span> <br> <span class=\"highlighterDiv\">{{user.myUrl}}</span> <p></p>",
-		"footer":""
-	},
-	"resumeTemplateJSON":
-	{
-		"header":"<p align='center'><span class=\"highlighterDiv\">{{user.firstName}} {{user.middleName}} {{user.lastName}}<br>{{user.address}}, {{user.city}}, {{user.state}}, {{user.zip}}<br> {{user.phone}} {{user.email}}</span></p> <h3 align='center'>Resume</h3><hr> <p>I am applying for the <span class=\"highlighterDiv\">{{audience.jobname}}</span> position, <span class=\"highlighterDiv\">{{audience.jobid}}</span>, for <span class=\"highlighterDiv\">{{audience.name}}</span> in <span class=\"highlighterDiv\">{{audience.city}}</span>, <span class=\"highlighterDiv\">{{audience.state}}</span>.</p>",
-		"body":"<p><b>Services</b></p><p><center><table><tr><td>Embedded System Analysis</td><td>Debugging &amp; Troubleshooting</td><td>Testing &amp; Documentation</td></tr><tr><td>Software Development</td><td>Requirements Management</td><td>Project Management</td></tr><tr><td>Coding &amp; Scripting</td><td>GUI Design</td><td>Database Design</td></tr></table></center></p><p><b>Technology Summary</b></p><p><u>Programming</u>: C, C ++, C#, XML, CSV, SVG, MySQL, MSSql, HTML, VB.Net, ASP.NET, ADO.NET, LINQ, Java, JavaScript, AngularJS, jQuery, CSS, and PHP</p><p><u>Development Tools</u>: MS Visual Studio 2012, MS Sql Server Management Studio, MySql Workbench, WAMP Server, Oracle NetBeans IDE, Notepad ++, Inkscape and Sketchup (CAD), MS Office Suite</p><p><u>Systems</u>: Windows, Dot NET</p><p><b>Education</b></p><p><u>Gannon University Erie, PA | B.S. Electrical/Computer Engineering, 2006</u><br>Electrical Engineering, Computer Engineering, Embedded SystemsPublished Scientific Journal on Artificial Intelligence</p><p></p><p><u>TCC, Tallahassee, FL | (Continued Education) Environmental Science, 2014</u><br>Environmental Systems, Plant Biology, Environmental Law/Regulations</p><p><u>Gannon University Erie, PA | (Masters Schooling) Information Analytics, 2015</u><br>Database Management, Requirements for Software Systems</p><p><b>Professional Experience</b></p><p><u>Independent Green Technologies (IGT) - Tallahassee, FL</u><br>CAD Specialist, 2014</p><p>My responsibility in the company focused on using computer aided design (CAD) tools to model price and cost projections for large-scale commercial organizations and residential stakeholders. The models were used to appraise and simulate design efficiency and feasibility to construct.</p><p><u>United States Coast Guard Cutter Mustang (WPB 1310) - Seward, AK</u><br>Machinery Technician, 2011-2013</p><p>As a member of a ship's engineering staff, I took the initiative to enhance our machinery related catalog and inventory database. Because of this initiative, enhancements were implemented service wide on that ship class. I used MS Access to develop a parts inventory catalog for EATON/Aeroquip brand high pressure hoses. This application was used to manage the preventative maintenance schedule, parts and pricing, and for ordering replacements for worn or damaged equipment and accessory parts.</p><p><u>Coast Guard Station Venice - Venice, LA</u><br>Search and Rescue, Boarding Officer, 2008-2011</p><p>In conjunction with search and rescue response duties, I developed a computer application to enhance safety and productivity. I used my computer technology skills to develop an HTML, CSS and RSS feed based application to gather weather, sea state and tidal information to assist in risk assessment for boats deploying in search and rescue operations.</p>",
-		"footer":""
-	},
-	"coverletterTemplateJSON":
-	{
-		"header": "<p class='w3-left-align'>{{today | date}}</p><p><span class=\"highlighterDiv\">{{audience.attn}}</span><br><span class=\"highlighterDiv\">{{audience.name}}</span><br><span class=\"highlighterDiv\">{{audience.address}}</span><br><span class=\"highlighterDiv\">{{audience.city}}</span>, <span class=\"highlighterDiv\">{{audience.state}}</span>, <span class=\"highlighterDiv\">{{audience.zip}}</span></p><br>",
-		"body": "<p>Dear <span class=\"highlighterDiv\">{{audience.attn}}</span>,</p> <p class=\"tab\">My name is <span class=\"highlighterDiv\">{{user.firstName}}</span> <span class=\"highlighterDiv\">{{user.middleName}}</span> <span class=\"highlighterDiv\">{{user.lastName}}</span>. I am applying for the <span class=\"highlighterDiv\">{{audience.jobname}}</span> position at <span class=\"highlighterDiv\">{{audience.name}}</span>, in <span class=\"highlighterDiv\">{{audience.city}}</span>. I possess skills in <span class=\"highlighterDiv\">{{desirability.skillarray}}</span>. As a <span class=\"highlighterDiv\">{{desirability.applicationidentity}}</span>, my abilities include <span class=\"highlighterDiv\">{{desirability.abilityarray}}</span>, and I <span class = \"highlighterDiv\">{{desirability.knowledgearray}}</span>. </p> <p class=\"tab\">I am seeking to diversify my technology portfolio and develop a career as a <span class = \"highlighterDiv\">{{desirability.applicationidentity}}</span>. I have developed a variety of program applications which perform tasks directed at social networking, GPS, weather, document preparation, databases, audio processing, telecommunications networking, and agriculture. I have labor, retail, mechanic, and legal employment experience and graduate school leadership in databases and robotics. I posses  the adaptability to apply the skills needed to work as a <span class=\"highlighterDiv\">{{audience.jobname}}</span> within <span class=\"highlighterDiv\">{{audience.name}}</span>.</p> <p class=\"tab\">Within the last year I have developed the following technology applications: a plant identification and imaging identification application, a Windows 8-10 tablet satellite global positioning system without wi-fi app, and an interactive tablet e-Book with an independent serve library database and  A web conferencing app. These projects were an opportunity to express my understanding and ability to perform a variety of different philosophical approaches, intellectual processes, and techniques which have value in a variety of technical markets.</p> <p class=\"tab\">The Plant Identification and Imaging Identification Assistant is a Windows OS application that performs comprehensive plant identification that is based upon human observations and traits of a plant specimen. The plant identification algorithm is based on a dichotomous key that associates genetic taxonomy and leaf shape morphology. The functionality of this application is dependent on both a camera image input and a person's sense of sight and feel. I used the following skills in developing my plant identification application: C#, Sql, MySql Database, plant biology taxonomy, image detection, EmguCV, front-end/back-end software development, and user interface design.</p> <p class=\"tab\">The tablet GPS app I developed is a cross-platform mobile device which inputs GPS signals from a USB COM port and displays the users current position, altitude, and speed. This application is not dependent on Internet signals. There is an additional celestial navigation modular component feature which is  currently under construction, which will be added as a plugin. Development of my GPS application skills includes: HTML, JavaScript, serial COM Port interface, object oriented VB.Net, and GPS serial string parsing.</p> <p class=\"tab\">The interactive tablet E-Book, book library database,  web conferencing app is a social prayer/meditation application which serves as an e-book library, LAN chat room and forum, interactive touch screen tablet, and teleconferencing tool. This device is plug and play, provided that a dedicated server is actively online on a shared network. Multiple users can log in and out in a shared event experience and influence each others' experience by changing the environment content. This App uses  ASP/WCF, C#, MySql, ADO.Net, Networked Conferencing, chat room techniques, E-Book, Database, TCP/IP, front-end/back-end development, language localization, and plug and play networking.</p> <p class=\"tab\"><span class=\"highlighterDiv\">{{audience.attn}}</span>, thank you for taking the time to read and consider my cover letter for employment with <span class=\"highlighterDiv\">{{audience.name}}</span>. I have multiple technical skills an diverse work experiences that will integrate well within your organization and its business culture. I welcome the opportunity to discuss your observations and my prospects of joining your organization and making an immediate contribution to your productivity.</p> ",
-		"footer": "<p>Sincerely,</p><br><br> <p><span class=\"highlighterDiv\">{{user.firstName}}</span> <span class=\"highlighterDiv\">{{user.middleName}}</span> <span class=\"highlighterDiv\">{{user.lastName}}</span><br><span class=\"highlighterDiv\">{{user.address}}</span>, <span class=\"highlighterDiv\">{{user.city}}</span>, <span class=\"highlighterDiv\">{{user.state}}</span>, <span class=\"highlighterDiv\">{{user.zip}}</span><br><span class=\"highlighterDiv\">{{user.email}}</span></p>"
-	}
-};
+					"senderTemplateJSON":
+					{
+						"firstName": "",
+						"middleName": "",
+						"lastName": "",
+						"address": "",
+						"city": "",
+						"state": "",
+						"zip": "",
+						"phone": "",
+						"email": "",
+						"myUrl": ""
+					},
+					"receiverTemplateJSON":
+					{
+						"jobname": "",
+						"jobid": "",
+						"hours":  [ {"id":'0', "workduration" : "temp"}, {"id":'1', "workduration" : "full-time"}, { "id":'2', "workduration" : "part-time" }, { "id":'3', "workduration" : "hourly"}, { "id":'4', "workduration" : "seasonal"}, { "id":'5', "workduration" : "salary"} ],
+						"name": "",
+						"address": "",
+						"city": "",
+						"state": "",
+						"zip": "",
+						"website": "",
+						"attn": "",
+						"attnemail": "",
+						"phone":"",
+						"situation":""
+					},
+					"environmentTemplateJSON":
+					{
+						"companydescription": "",
+						"companyphilosophy": "",
+						"companycustomers": "",
+						"companydistinguish": ""
+					},
+					"relationshipTemplateJSON":
+					{
+						"applicationidentity": "",
+						"skillarray": "",
+						"knowledgearray": "",
+						"abilityarray": ""
+					},
+					"emailletterTemplateJSON":
+					{
+						"leadtype":"Stackoverflow Jobs",
+						"followup":"web research",
+						"header":"",
+						"body":"<p class=\"w3-left-align\">{{today | date}}</p> <br> Dear <span class=\"highlighterDiv\">{{audience.attn}}</span>, <br><br> <p class=\"tab\">My name is <span class=\"highlighterDiv\">{{user.firstName}}</span> <span class=\"highlighterDiv\">{{user.lastName}}</span>. I learned about your company, <span class=\"highlighterDiv\">{{audience.name}}</span>, through <span class=\"highlighterDiv\">{{leads.leadtype}}</span>. I understand you are currently in the process of hiring a <span class=\"highlighterDiv\">{{audience.jobname}}</span>. I am seeking employment in this discipline of technology. Based on what I learned from <span class=\"highlighterDiv\">{{leads.followup}}</span>, I see that your company <span class=\"highlighterDiv\">{{environmentsetting.companydescription}}</span>. Your customers <span class=\"highlighterDiv\">{{environmentsetting.companycustomers}}</span>. You are looking for talent who have skills in <span class=\"highlighterDiv\">{{desirability.skillarray}} </span>. Your organization <span class=\"highlighterDiv\">{{environmentsetting.companyphilosophy}}</span>. <span class=\"highlighterDiv\">{{environmentsetting.companydistinguish}}</span>. This appeals to me, and I would like the opportunity to try out for your team.</p> <p class=\"tab\"> May I send you my cover letter and resume? I hope it may inspire talking points regarding my eligibility for this position. My confidence, as an applicant, is directed at an entry-level position, but my abilities are perhaps reflective of a mid-level position. I would like to have a conversation about the work culture at <span class = \"highlighterDiv\">{{audience.name}}</span> and learn what you,<span class = \"highlighterDiv\">{{audience.attn}}</span>, believe are key ingredients for employee success at your organization.</p> <br> Respectfully,<br> <span class = \"highlighterDiv\">{{user.firstName}}</span> <span class = \"highlighterDiv\"> {{user.middleName}} </span> <span class = \"highlighterDiv\">{{user.lastName}}</span> <br> <span class=\"highlighterDiv\">{{user.myUrl}}</span> <p></p>",
+						"footer":""
+					},
+					"resumeTemplateJSON":
+					{
+						"header":"<p align='center'><span class=\"highlighterDiv\">{{user.firstName}} {{user.middleName}} {{user.lastName}}<br>{{user.address}}, {{user.city}}, {{user.state}}, {{user.zip}}<br> {{user.phone}} {{user.email}}</span></p> <h3 align='center'>Resume</h3><hr> <p>I am applying for the <span class=\"highlighterDiv\">{{audience.jobname}}</span> position, <span class=\"highlighterDiv\">{{audience.jobid}}</span>, for <span class=\"highlighterDiv\">{{audience.name}}</span> in <span class=\"highlighterDiv\">{{audience.city}}</span>, <span class=\"highlighterDiv\">{{audience.state}}</span>.</p>",
+						"body":"<p><b>Services</b></p><p><center><table><tr><td>Embedded System Analysis</td> <td>Debugging and Troubleshooting</td><td>Testing &amp; Documentation</td></tr><tr><td>Software Development</td><td>Requirements Management</td><td>Project Management</td></tr><tr><td>Coding &amp; Scripting</td><td>GUI Design</td><td>Database Design</td></tr></table></center></p><p><b>Technology Summary</b></p><p> <u>Programming</u>: C, C ++, C#, XML, CSV, SVG, MySQL, MSSql, HTML, VB.Net, ASP.NET, ADO.NET, LINQ, Java, JavaScript, AngularJS, jQuery, CSS, and PHP</p><p><u>Development Tools</u>: MS Visual Studio 2012, MS Sql Server Management Studio, MySql Workbench, WAMP Server, Oracle NetBeans IDE, Notepad ++, Atom for Mac, Inkscape, Sketchup 3D(CAD), MS Office Suite</p><p><u>Systems</u>: Windows, Dot NET</p><p><b>Education</b></p><p><u>Gannon University Erie, PA | B.S. Electrical/Computer Engineering, 2006</u><br>Electrical Engineering, Computer Engineering, Embedded SystemsPublished Scientific Journal on Artificial Intelligence</p><p></p><p><u>TCC, Tallahassee, FL | (Continued Education) Environmental Science, 2014</u><br>Environmental Systems, Plant Biology, Environmental Law/Regulations</p><p><u>Gannon University Erie, PA | (Masters Schooling) Information Analytics, 2015</u><br>Database Management, Requirements for Software Systems</p><p><b>Professional Experience</b></p><p><u>Independent Green Technologies (IGT) - Tallahassee, FL</u><br>CAD Specialist, 2014</p><p>My responsibility in the company focused on using computer aided design (CAD) tools to model price and cost projections for large-scale commercial organizations and residential stakeholders. The models were used to appraise and simulate design efficiency and feasibility to construct.</p><p><u>United States Coast Guard Cutter Mustang (WPB 1310) - Seward, AK</u><br>Machinery Technician, 2011-2013</p><p>As a member of a ship's engineering staff, I took the initiative to enhance our machinery related catalog and inventory database. Because of this initiative, enhancements were implemented service wide on that ship class. I used MS Access to develop a parts inventory catalog for EATON/Aeroquip brand high pressure hoses. This application was used to manage the preventative maintenance schedule, parts and pricing, and for ordering replacements for worn or damaged equipment and accessory parts.</p><p><u>Coast Guard Station Venice - Venice, LA</u><br>Search and Rescue, Boarding Officer, 2008-2011</p><p>In conjunction with search and rescue response duties, I developed a computer application to enhance safety and productivity. I used my computer technology skills to develop an HTML, CSS and RSS feed based application to gather weather, sea state and tidal information to assist in risk assessment for boats deploying in search and rescue operations.</p>",
+						"footer":""
+					},
+					"coverletterTemplateJSON":
+					{
+						"header": "<p class='w3-left-align'>{{today | date}}</p><p><span class=\"highlighterDiv\">{{audience.attn}}</span><br><span class=\"highlighterDiv\">{{audience.name}}</span><br><span class=\"highlighterDiv\">{{audience.address}}</span><br><span class=\"highlighterDiv\">{{audience.city}}</span>, <span class=\"highlighterDiv\">{{audience.state}}</span>, <span class=\"highlighterDiv\">{{audience.zip}}</span></p><br>",
+						"body": "<p>Dear <span class=\"highlighterDiv\">{{audience.attn}}</span>,</p> <p class=\"tab\">My name is <span class=\"highlighterDiv\">{{user.firstName}}</span> <span class=\"highlighterDiv\">{{user.middleName}}</span> <span class=\"highlighterDiv\">{{user.lastName}}</span>. I am applying for the <span class=\"highlighterDiv\">{{audience.jobname}}</span> position at <span class=\"highlighterDiv\">{{audience.name}}</span>, in <span class=\"highlighterDiv\">{{audience.city}}</span>. I possess skills in <span class=\"highlighterDiv\">{{desirability.skillarray}}</span>. As a <span class=\"highlighterDiv\">{{desirability.applicationidentity}}</span>, my abilities include <span class=\"highlighterDiv\">{{desirability.abilityarray}}</span>, and I <span class = \"highlighterDiv\">{{desirability.knowledgearray}}</span>. </p> <p class=\"tab\">I am seeking to diversify my technology portfolio and develop a career as a <span class = \"highlighterDiv\">{{desirability.applicationidentity}}</span>. I have developed a variety of program applications which perform tasks directed at social networking, GPS, weather, document preparation, databases, audio processing, telecommunications networking, and agriculture. I have labor, retail, mechanic, and legal employment experience and graduate school leadership in databases and robotics. I posses  the adaptability to apply the skills needed to work as a <span class=\"highlighterDiv\">{{audience.jobname}}</span> within <span class=\"highlighterDiv\">{{audience.name}}</span>.</p> <p class=\"tab\">Within the last year I have developed the following technology applications: a plant identification and imaging identification application, a Windows 8-10 tablet satellite global positioning system without wi-fi app, and an interactive tablet e-Book with an independent serve library database and  A web conferencing app. These projects were an opportunity to express my understanding and ability to perform a variety of different philosophical approaches, intellectual processes, and techniques which have value in a variety of technical markets.</p> <p class=\"tab\">The Plant Identification and Imaging Identification Assistant is a Windows OS application that performs comprehensive plant identification that is based upon human observations and traits of a plant specimen. The plant identification algorithm is based on a dichotomous key that associates genetic taxonomy and leaf shape morphology. The functionality of this application is dependent on both a camera image input and a person's sense of sight and feel. I used the following skills in developing my plant identification application: C#, Sql, MySql Database, plant biology taxonomy, image detection, EmguCV, front-end/back-end software development, and user interface design.</p> <p class=\"tab\">The tablet GPS app I developed is a cross-platform mobile device which inputs GPS signals from a USB COM port and displays the users current position, altitude, and speed. This application is not dependent on Internet signals. There is an additional celestial navigation modular component feature which is  currently under construction, which will be added as a plugin. Development of my GPS application skills includes: HTML, JavaScript, serial COM Port interface, object oriented VB.Net, and GPS serial string parsing.</p> <p class=\"tab\">The interactive tablet E-Book, book library database,  web conferencing app is a social prayer/meditation application which serves as an e-book library, LAN chat room and forum, interactive touch screen tablet, and teleconferencing tool. This device is plug and play, provided that a dedicated server is actively online on a shared network. Multiple users can log in and out in a shared event experience and influence each others' experience by changing the environment content. This App uses  ASP/WCF, C#, MySql, ADO.Net, Networked Conferencing, chat room techniques, E-Book, Database, TCP/IP, front-end/back-end development, language localization, and plug and play networking.</p> <p class=\"tab\"><span class=\"highlighterDiv\">{{audience.attn}}</span>, thank you for taking the time to read and consider my cover letter for employment with <span class=\"highlighterDiv\">{{audience.name}}</span>. I have multiple technical skills an diverse work experiences that will integrate well within your organization and its business culture. I welcome the opportunity to discuss your observations and my prospects of joining your organization and making an immediate contribution to your productivity.</p> ",
+						"footer": "<p>Sincerely,</p><br><br> <p><span class=\"highlighterDiv\">{{user.firstName}}</span> <span class=\"highlighterDiv\">{{user.middleName}}</span> <span class=\"highlighterDiv\">{{user.lastName}}</span><br><span class=\"highlighterDiv\">{{user.address}}</span>, <span class=\"highlighterDiv\">{{user.city}}</span>, <span class=\"highlighterDiv\">{{user.state}}</span>, <span class=\"highlighterDiv\">{{user.zip}}</span><br><span class=\"highlighterDiv\">{{user.email}}</span></p>"
+					}
+				};
 
 				return factoryObj;
 			});
 			app.factory('myAppFactoryJsonDEMO', function(){
 				var factoryObj = {
-	"senderTemplateJSON":
-	{
-		"firstName": "Michael",
-		"middleName": "Jerome",
-		"lastName": "Todd",
-		"address": "123 Address Ln.",
-		"city": "Sim City",
-		"state": "ST",
-		"zip": "12345",
-		"phone": "123-456-7890",
-		"email": "mezcel@mail.com",
-		"myUrl": "https://github.com/mezcel"
-	},
-	"receiverTemplateJSON":
-	{
-		"jobname": "Programmer",
-		"jobid": "software developer",
-		"hours":  [ {"id":'0', "workduration" : "temp"}, {"id":'1', "workduration" : "full-time"}, { "id":'2', "workduration" : "part-time" }, { "id":'3', "workduration" : "hourly"}, { "id":'4', "workduration" : "seasonal"}, { "id":'5', "workduration" : "salary"} ],
-		"name": "ACME",
-		"address": "1011 Bitmap",
-		"city": "Megatropolis",
-		"state": "MT",
-		"zip": "67890",
-		"website": "name@mail.com",
-		"attn": "Mr. Smith",
-		"attnemail": "name@mail.com",
-		"phone":"987-654-3210",
-		"situation":"Stackoverflow Jobs"
-	},
-	"environmentTemplateJSON":
-	{
-		"companydescription": "is developing cutting-edge software that streamlines the processes related to prescribing, distributing, and administering specialty medications",
-		"companyphilosophy": "increases speed to therapy by revolutionizing health care technology by integrating with third-party networks",
-		"companycustomers": "work in specialized pharmaceutical industries",
-		"companydistinguish": "You design custom solutions that improve productivity and benefit all stakeholders"
-	},
-	"relationshipTemplateJSON":
-	{
-		"applicationidentity": "front-end developer",
-		"skillarray": "C#, ASP.NET MVC, and Angular Java Script",
-		"knowledgearray": "have experience debugging, troubleshooting, and managing entity relationship databases on server and client side software. I am capable of being up-to-date with the latest developments in various technical fields",
-		"abilityarray": "solid theoretical foundations in various areas of computing, including algorithms & data structures, databases and especially distributed computing. I have experience appraising software requirements, management and applying database design"
-	},
-	"demoObjArrTableHistory":
-[
-	{
-		"jobname": ".NET Developer",
-		"jobid": "software developer",
-		"hours": "contract",
-		"name": "Ascentis",
-		"address": "8657 Baypine Road Suite 201",
-		"city": "Jacksonville",
-		"state": "FL",
-		"zip": "32256", "website": "http://www.ascentis.com/",
-		"attn": "Ascentis Regional Office",
-		"attnemail": "http://www.ascentis.com/about-us/contact-us/",
-		"phone":"1.800.229.2713",
-		"situation":"Stack Overflow Jobs",
-		"today":"t1"
-	},
-	{
-		"jobname": "Applications Architect", "jobid": "(118349)", "hours": "contract", "name": "UPS Information Technology", "address": "340 Macarthur Blvd", "city": "Mahwah", "state": "NJ", "zip": "07430", "website": "https://www.commercialcafe.com/commercial-property/us/nj/mahwah/ups-world-technology-headquarters/", "attn": "UPS World Technology Headquarters", "attnemail": "https://www.jobs-ups.com/information-technology", "phone":"201-934-4176", "situation":"Stack Overflow Jobs", "today":"t2"
-	},
-	{
-		"jobname": "Cleared SharePoint/.NET Developers", "jobid": "(1483)", "hours": "contract", "name": "Applied Information Sciences (AIS)", "address": "11400 Commerce Park Dr # 600", "city": "Reston", "state": "VA", "zip": "20191", "website": "https://www.appliedis.com/", "attn": "Applied Information Sciences", "attnemail": "recruiting@appliedis.com", "phone":"703.860.7808 ", "situation":"Stack Overflow Jobs", "today":"t3"
-	},
-	{
-		"jobname": ".NET Developer", "jobid": "software developer", "hours": "contract", "name": "Greenshades", "address": "7020 AC Skinner Parkway Suite 100", "city": "Jacksonville", "state": "FL", "zip": "32256", "website": "https://www.greenshades.com/", "attn": "Greenshades", "attnemail": "http://www.greenshades.com/about-contact-us.php", "phone":"888-255-3815", "situation":"Stack Overflow Jobs", "today":"t4"
-	},
-	{
-		"jobname": "C# Software Engineer", "jobid": "software developer", "hours": "contract", "name": "Industrial Color", "address": "32 Ave. of the America – 22nd Floor", "city": "New York", "state": "NY ", "zip": "10013", "website": "http://industrialcolor.com/", "attn": "Industrial Color", "attnemail": "icny@industrialcolor.com", "phone":"(212) 334 3353", "situation":"Stack Overflow Jobs", "today":"t5"
-	},
-	{
-		"jobname": "Staff Help", "jobid": "go-for", "hours": "peon", "name": "Mezcel Inc.", "address": "123 Address Ln. – 2nd Floor", "city": "New Crawfordville", "state": "AB ", "zip": "12345", "website": "https://github.com/mezcel", "attn": "Mr. Mezcel", "attnemail": "mezcel@mail.com", "phone":"(000) 000-000", "situation":"a friend of a stranger", "today":"t6"
-	}
-]
-};
+					"senderTemplateJSON":
+					{
+						"firstName": "Michael",
+						"middleName": "Jerome",
+						"lastName": "Todd",
+						"address": "123 Address Ln.",
+						"city": "Sim City",
+						"state": "ST",
+						"zip": "12345",
+						"phone": "123-456-7890",
+						"email": "mezcel@mail.com",
+						"myUrl": "https://github.com/mezcel"
+					},
+					"receiverTemplateJSON":
+					{
+						"jobname": "Programmer",
+						"jobid": "software developer",
+						"hours":  [ {"id":'0', "workduration" : "temp"}, {"id":'1', "workduration" : "full-time"}, { "id":'2', "workduration" : "part-time" }, { "id":'3', "workduration" : "hourly"}, { "id":'4', "workduration" : "seasonal"}, { "id":'5', "workduration" : "salary"} ],
+						"name": "ACME",
+						"address": "1011 Bitmap",
+						"city": "Megatropolis",
+						"state": "MT",
+						"zip": "67890",
+						"website": "name@mail.com",
+						"attn": "Mr. Smith",
+						"attnemail": "name@mail.com",
+						"phone":"987-654-3210",
+						"situation":"Stackoverflow Jobs"
+					},
+					"environmentTemplateJSON":
+					{
+						"companydescription": "is developing cutting-edge software that streamlines the processes related to prescribing, distributing, and administering specialty medications",
+						"companyphilosophy": "increases speed to therapy by revolutionizing health care technology by integrating with third-party networks",
+						"companycustomers": "work in specialized pharmaceutical industries",
+						"companydistinguish": "You design custom solutions that improve productivity and benefit all stakeholders"
+					},
+					"relationshipTemplateJSON":
+					{
+						"applicationidentity": "front-end developer",
+						"skillarray": "C#, ASP.NET MVC, and Angular Java Script",
+						"knowledgearray": "have experience debugging, troubleshooting, and managing entity relationship databases on server and client side software. I am capable of being up-to-date with the latest developments in various technical fields",
+						"abilityarray": "solid theoretical foundations in various areas of computing, including algorithms & data structures, databases and especially distributed computing. I have experience appraising software requirements, management and applying database design"
+					},
+					"demoObjArrTableHistory":
+				[
+					{
+						"jobname": ".NET Developer",
+						"jobid": "software developer",
+						"hours": "contract",
+						"name": "Ascentis",
+						"address": "8657 Baypine Road Suite 201",
+						"city": "Jacksonville",
+						"state": "FL",
+						"zip": "32256", "website": "http://www.ascentis.com/",
+						"attn": "Ascentis Regional Office",
+						"attnemail": "http://www.ascentis.com/about-us/contact-us/",
+						"phone":"1.800.229.2713",
+						"situation":"Stack Overflow Jobs",
+						"today":"t1"
+					},
+					{
+						"jobname": "Applications Architect", "jobid": "(118349)", "hours": "contract", "name": "UPS Information Technology", "address": "340 Macarthur Blvd", "city": "Mahwah", "state": "NJ", "zip": "07430", "website": "https://www.commercialcafe.com/commercial-property/us/nj/mahwah/ups-world-technology-headquarters/", "attn": "UPS World Technology Headquarters", "attnemail": "https://www.jobs-ups.com/information-technology", "phone":"201-934-4176", "situation":"Stack Overflow Jobs", "today":"t2"
+					},
+					{
+						"jobname": "Cleared SharePoint/.NET Developers", "jobid": "(1483)", "hours": "contract", "name": "Applied Information Sciences (AIS)", "address": "11400 Commerce Park Dr # 600", "city": "Reston", "state": "VA", "zip": "20191", "website": "https://www.appliedis.com/", "attn": "Applied Information Sciences", "attnemail": "recruiting@appliedis.com", "phone":"703.860.7808 ", "situation":"Stack Overflow Jobs", "today":"t3"
+					},
+					{
+						"jobname": ".NET Developer", "jobid": "software developer", "hours": "contract", "name": "Greenshades", "address": "7020 AC Skinner Parkway Suite 100", "city": "Jacksonville", "state": "FL", "zip": "32256", "website": "https://www.greenshades.com/", "attn": "Greenshades", "attnemail": "http://www.greenshades.com/about-contact-us.php", "phone":"888-255-3815", "situation":"Stack Overflow Jobs", "today":"t4"
+					},
+					{
+						"jobname": "C# Software Engineer", "jobid": "software developer", "hours": "contract", "name": "Industrial Color", "address": "32 Ave. of the America – 22nd Floor", "city": "New York", "state": "NY ", "zip": "10013", "website": "http://industrialcolor.com/", "attn": "Industrial Color", "attnemail": "icny@industrialcolor.com", "phone":"(212) 334 3353", "situation":"Stack Overflow Jobs", "today":"t5"
+					},
+					{
+						"jobname": "Staff Help", "jobid": "go-for", "hours": "peon", "name": "Mezcel Inc.", "address": "123 Address Ln. – 2nd Floor", "city": "New Crawfordville", "state": "AB ", "zip": "12345", "website": "https://github.com/mezcel", "attn": "Mr. Mezcel", "attnemail": "mezcel@mail.com", "phone":"(000) 000-000", "situation":"a friend of a stranger", "today":"t6"
+					}
+				]
+				};
 				return factoryObj;
 			});
 
