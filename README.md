@@ -4,7 +4,7 @@
 
 Wiki Page: [Document Writer App](http://mezcel.wixsite.com/documentapp)
 
-Both versions, as it is now, is tailored to me and the functional task I was trying to accomplish. 
+Both versions, as it is now, are tailored to me and the functional task I was trying to accomplish. 
 
 * v1 - JavaScript, Html 5
 * v2 - jQuery Angular, Bootstrap, SVG
