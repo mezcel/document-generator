@@ -3,6 +3,7 @@
 ### document-generator: corespondance related templates
 
 Wiki Page: [Document Writer App](http://mezcel.wixsite.com/documentapp)
+Demo Video: [Demo Link](https://mezcel.wixsite.com/documentapp/demo-video)
 
 Both versions, as it is now, are tailored to me and the functional task I was trying to accomplish. 
 
