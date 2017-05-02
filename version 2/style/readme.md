@@ -6,3 +6,9 @@
 | myStyle-appStyles.css | my specific custom styles |
 | myStyle-w3school.css | W3 School switches and sliders |
 | myStyle-animations.css | an additional loading animation, css controlled SVG |
+
+## Script Hosting
+
+One recomended method of "pathing" these scripts is through through RawGit https://rawgit.com/
+
+My index.html is self contained.
