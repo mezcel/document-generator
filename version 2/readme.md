@@ -1,5 +1,7 @@
 # Version 2: Angular JS with Bootstrap
 
+### Best Results in Google Chrome
+
 ## Before and after:
  
 * The first version was a proof of concept and brainstorm of what I wanted the app was supposed to and how it would get used. I was pure CSS and Java Script.
