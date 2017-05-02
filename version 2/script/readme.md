@@ -10,6 +10,8 @@
 
 ## Script Hosting
 
-One recomended method of "pathing" these scripts is through through RawGit https://rawgit.com/
+One recomended method of "pathing" these scripts is through through:
+* RawGit https://rawgit.com/
+* CDNJS https://github.com/cdnjs/cdnjs
 
-My index.html is self contained.
+My index.html is self contained. It too large to be html, but... its all there.
