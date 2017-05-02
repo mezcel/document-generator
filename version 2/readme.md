@@ -1,6 +1,9 @@
 # Version 2: Angular JS with Bootstrap
 
-### !!! Best Results in Google Chrome !!!
+###### Best Results
+* Google Chome has no startup glitches
+* Firefox has the best runtime performance
+* Safari has strange file saving results
 
 ## Before and after:
  
