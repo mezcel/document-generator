@@ -1,6 +1,6 @@
 # Version 2: Angular JS with Bootstrap
 
-### Best Results in Google Chrome
+### !!! Best Results in Google Chrome !!!
 
 ## Before and after:
  
