@@ -5,6 +5,12 @@
 * Firefox has the best runtime performance
 * Safari has strange file saving results
 
+## Script Hosting
+
+Hosted scripts are pathed via Gitbub through RawGit https://rawgit.com/
+
+My index.html is self contained.
+
 ## Before and after:
  
 * The first version was a proof of concept and brainstorm of what I wanted the app was supposed to and how it would get used. I was pure CSS and Java Script.
