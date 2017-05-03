@@ -1,4 +1,4 @@
-# WIP File
+# Work In Progress Files (temp folder)
 
 ### This is a (scratch pad / trial and error).
 
