@@ -2162,7 +2162,14 @@
 						templateText = jsonVar.resumeTemplateJSON.body;
 						$scope.resumePreviewBody = $interpolate(templateText)($scope);
 					}
-
+					
+					if (angular.isUndefined(jsonVar.resumeTemplateJSON)) {
+						jsonVar.resumeTemplateJSON;
+					} else {
+						// manually update angular input prompts
+						templateText = jsonVar.relationshipTemplateJSON.abilityarrayinputPrompt;
+						$scope.desirability.abilityarrayinputPrompt = $interpolate(templateText)($scope);
+					}
 				};
 
 				/* ************************ */
