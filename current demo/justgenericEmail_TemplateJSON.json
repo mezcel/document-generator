@@ -4,11 +4,11 @@
 		"firstName": "Michael",
 		"middleName": "Jerome",
 		"lastName": "Todd",
-		"address": "78 River Court",
+		"address": "## Street Ln.",
 		"city": "Crawfordville",
 		"state": "FL",
-		"zip": "32327",
-		"phone": "850-XXX-XXXX",
+		"zip": "XXXXX",
+		"phone": "XXX-XXX-XXXX",
 		"email": "mezcel@mail.com",
 		"myUrl": "https://github.com/mezcel"
 	},
@@ -17,23 +17,23 @@
 		"jobname": "Stations of the Cross Blog Post",
 		"jobid": "a Bootstrap Carousel Stations of the Cross",
 		"hours":  "-",
-		"name": "The Kids’ Bulletins",
+		"name": "Canadian Christian Blog",
 		"address": "WordPress",
 		"city": "-",
 		"state": "-",
 		"zip": "Canada",
 		"website": "https://thekidsbulletin.wordpress.com/",
-		"attn": "Sparky",
-		"attnemail": "thekidsbulletin@gmail.com",
+		"attn": "Ms. Blog Author",
+		"attnemail": "name@gmail.com",
 		"phone":"-",
 		"situation":"your Stations of the Cross Blog, March 28, 2017"
 	},
 	"environmentTemplateJSON":
 	{
 		"companydescriptioninputPrompt":"I see that ...",
-		"companydescription": "The Kids’ Bulletins is a resource for Catholic kids who would like to have some fun while learning about the readings from the Sunday Mass every week.",
+		"companydescription": "Canadian Christian Blog is a resource for Catholic kids who would like to have some fun while learning about the readings from the Sunday Mass every week.",
 		"companyphilosophyinputPrompt":"[enter an independant statement]",
-		"companyphilosophy": "You made the Kids’ Bulletins to help others to know, love and serve God better every day. You also offer usage of your content resources, provided that we share the credit with you.",
+		"companyphilosophy": "You made Canadian Christian Blog to help others to know, love and serve God better every day. You also offer usage of your content resources, provided that we share the credit with you.",
 		"companycustomersinputPrompt": "Your target audience is geared toward ...",
 		"companycustomers": "Catholics",
 		"companydistinguishinputPrompt": "[enter an independant statement]",
@@ -41,13 +41,13 @@
 	},
 	"relationshipTemplateJSON":
 	{
-		"applicationidentityinputPrompt": "As a ...",
-		"applicationidentity": "a Catholic and a computer programmer",
+		"applicationidentityinputPrompt": "As . . .",
+		"applicationidentity": "Catholic and a computer programmer",
 		"skillarrayinputPrompt": "My interests in ...",
 		"skillarray": "programming and religious expression",
 		"knowledgearrayinputPrompt": ", because I respect and relate to ...",
 		"knowledgearray": "the Catechism, and the Catholic culture",
-		"abilityarrayinputPrompt": "As \"that someone that I claim to be\", ...",
+		"abilityarrayinputPrompt": ". . . as a <span>{{desirability.applicationidentity}}</span> . . .",
 		"abilityarray": "I seek to find ways of linking secular interests with Christian expression"
 	},
 	"emailletterTemplateJSON":
@@ -55,7 +55,7 @@
 		"lead":"a Google search for Stations of the Cross art",
 		"research":"your blog site",
 		"header":"A placeholder for a email header imported from a JSON file.",
-		"body":"<p id='coverletterTime' class='w3-left-align'>{{today | date}}</p> <br> Dear <span class='highlighterDiv'>{{audience.attn}}</span>, <br><br> <p class='tab'>My name is <span class='highlighterDiv'>{{user.firstName}}</span> <span class='highlighterDiv'>{{user.lastName}}</span>. I learned about, <span class='highlighterDiv'>{{audience.name}}</span>, through <span class='highlighterDiv'>{{leads.leadtype}}</span>. I am <span class='highlighterDiv'>{{desirability.applicationidentity}}</span>. Based on what I learned from <span class='highlighterDiv'>{{leads.followup}}</span>, I see that <span class='highlighterDiv'>{{environmentsetting.companydescription}}</span> Your target audience is geared toward <span class='highlighterDiv'>{{environmentsetting.companycustomers}}</span>. My interest in <span class = 'highlighterDiv' >{{desirability.skillarray}}</span> has inspired me to build upon what you started. <span class='highlighterDiv'>{{environmentsetting.companyphilosophy}}</span> <span class='highlighterDiv'>{{environmentsetting.companydistinguish}}</span> What you are doing is appealing. I would like to receive feedback or impressions regarding the appeal of <span class='highlighterDiv'>{{audience.jobid}}</span>.</p>",
+		"body":"<p id='coverletterTime' class='w3-left-align'>{{today | date}}</p> <br> Dear <span class='highlighterDiv'>{{audience.attn}}</span>, <br><br> <p class='tab'>My name is <span class='highlighterDiv'>{{user.firstName}}</span> <span class='highlighterDiv'>{{user.lastName}}</span>. I learned about, <span class='highlighterDiv'>{{audience.name}}</span>, through <span class='highlighterDiv'>{{leads.leadtype}}</span>. I am a <span class='highlighterDiv'>{{desirability.applicationidentity}}</span>. Based on what I learned from <span class='highlighterDiv'>{{leads.followup}}</span>, I see that <span class='highlighterDiv'>{{environmentsetting.companydescription}}</span> Your target audience is geared toward <span class='highlighterDiv'>{{environmentsetting.companycustomers}}</span>. My interest in <span class = 'highlighterDiv' >{{desirability.skillarray}}</span> has inspired me to build upon what you started. <span class='highlighterDiv'>{{environmentsetting.companyphilosophy}}</span> <span class='highlighterDiv'>{{environmentsetting.companydistinguish}}</span> What you are doing is appealing. I would like to receive feedback or impressions regarding the appeal of <span class='highlighterDiv'>{{audience.jobid}}</span>.</p>",
 		"footer":"A placeholder for a email footer imported from a JSON file."
 	},
 	"resumeTemplateJSON":
@@ -67,7 +67,7 @@
 	"coverletterTemplateJSON":
 	{
 		"header": "<p id='coverletterTime' class='w3-left-align'>{{today | date}}</p><p><span class='highlighterDiv'>{{audience.attn}}</span><br><span class='highlighterDiv'>{{audience.name}}</span><br><span class='highlighterDiv'>{{audience.zip}}</span></p><br>",
-		"body": "<p>Dear <span class='highlighterDiv'>{{audience.attn}}</span>,</p> <p class='tab'>My name is <span class='highlighterDiv'>{{user.firstName}}</span> <span class='highlighterDiv'>{{user.middleName}}</span> <span class='highlighterDiv'>{{user.lastName}}</span>. I discovered <span class='highlighterDiv'>{{audience.situation}}</span>, at <span class='highlighterDiv'>{{audience.name}}</span>, and I want to contribute to your work. I possess skills in <span class='highlighterDiv'>{{desirability.skillarray}}</span>. As a <span class='highlighterDiv'>{{desirability.applicationidentity}}</span>, <span class='highlighterDiv'>{{desirability.abilityarray}}</span>, because I have respect for, and relate to <span class='highlighterDiv'>{{desirability.knowledgearray}}</span>. I am seeking to diversify my experience portfolio and further my way of life as a <span class='highlighterDiv'>{{desirability.applicationidentity}}</span>.</p><p class='tab'><span class='highlighterDiv'>{{audience.attn}}</span>, thank you for doing what you do, and thank you for taking the time to read how <span class='highlighterDiv'>{{audience.name}}</span> has inspired my own work.</p>",
+		"body": "<p>Dear <span class='highlighterDiv'>{{audience.attn}}</span>,</p> <p class='tab'>My name is <span class='highlighterDiv'>{{user.firstName}}</span> <span class='highlighterDiv'>{{user.middleName}}</span> <span class='highlighterDiv'>{{user.lastName}}</span>. I discovered <span class='highlighterDiv'>{{audience.situation}}</span>, at <span class='highlighterDiv'>{{audience.name}}</span>, and I want to contribute to your work. I consider myself skilled in <span class='highlighterDiv'>{{desirability.skillarray}}</span>. As a <span class='highlighterDiv'>{{desirability.applicationidentity}}</span>, <span class='highlighterDiv'>{{desirability.abilityarray}}</span>. I derive a personal satisfaction and pride when I fulfill the goals and expectations of <span class='highlighterDiv'>{{desirability.knowledgearray}}</span>. I am seeking to diversify my experience portfolio and further my way of life as a <span class='highlighterDiv'>{{desirability.applicationidentity}}</span>.</p><p class='tab'><span class='highlighterDiv'>{{audience.attn}}</span>, thank you for doing what you do, and thank you for taking the time to read how <span class='highlighterDiv'>{{audience.name}}</span> has inspired my own work.</p>",
 		"footer": "<br><p>Sincerely,</p><br><br> <p><span class='highlighterDiv'>{{user.firstName}}</span> <span class='highlighterDiv'>{{user.middleName}}</span> <span class='highlighterDiv'>{{user.lastName}}</span><br><span class='highlighterDiv'>{{user.address}}</span>, <span class='highlighterDiv'>{{user.city}}</span>, <span class='highlighterDiv'>{{user.state}}</span>, <span class='highlighterDiv'>{{user.zip}}</span><br><span class='highlighterDiv'>{{user.email}}</span></p>"
 	}
 }
