@@ -720,14 +720,14 @@
 										<div class='row'>
 											<div class='col-sm-4'>
 												<div class="input-group">
-													<span class='input-group-addon span-width'>Position:</span>
+													<span class='input-group-addon span-width' ng-bind-html="audience.jobnameinputPrompt" ></span>
 													<input class='form-control' id="jobnameInput" name='audienceJobname' placeholder='Position Name' type='text' ng-model="audience.jobname" ng-init="audience.jobname = ''" ng-class="{'myInputValid': frmAudience.audienceJobname.$valid && frmAudience.audienceJobname.$dirty, 'myInputInvalid': frmAudience.audienceJobname.$invalid && frmAudience.audienceJobname.$dirty}"  ng-change='outputPreview()' changed-field  required></input>
 												</div>
 
 											</div>
 											<div class='col-sm-4'>
 												<div class="input-group">
-													<span class='input-group-addon span-width'>Job Code:</span>
+													<span class='input-group-addon span-width' ng-bind-html="audience.jobidinputPrompt"></span>
 													<input class='form-control' id="jobidInput" name='audienceJobid ' placeholder='Position ID / software developer' type='text' value='' ng-model="audience.jobid" ng-init="audience.jobid = ''" ng-class="{'myInputValid': frmAudience.audienceJobid.$valid && frmAudience.audienceJobid.$dirty, 'myInputInvalid': frmAudience.audienceJobid.$invalid && frmAudience.audienceJobid.$dirty}" ng-change='outputPreview()' changed-field  required></input>
 												</div>
 											</div>
@@ -922,7 +922,7 @@
 																Browse&hellip; <input id='resumeTemplateUpload' onchange="angular.element(this).scope().fileInputResumeJSON(this)" type="file" style="display: none;" ng-disabled = "frmTemplates.rdoResumeTemplate !== '1'">
 															</span>
 														</label>
-														<input type="text" class="form-control" readonly>
+														<input id="inputFileNameDisplay" type="text" class="form-control" readonly>
 													</div>
 												</div>
 												</h4>
@@ -2030,32 +2030,12 @@
 						inputContents = e.target.result;
 						$('#loginputPreviewDiv').html(inputContents); //this is just an extra optional preview
 						$scope.importedTableLog = htmlTableString2Json(inputContents);
-
-
 					}; //end onload()
 					reader.readAsText(filePath.files[0]);
 				}
 
 				/* commit file input to $scope.JobTblPast array */
 				$scope.btnCommitPreviewToScope = function() {
-					/*
-					//i dont need this anymore, but i feel i may need it again
-					var array = [];
-					var headers = [];
-					if (document.getElementById('dataTable')) {
-						$('#dataTable th').each(function(index, item) {
-							headers[index] = $(item).html();
-						});
-						$('#dataTable tr').has('td').each(function() {
-							var arrayItem = {};
-							$('td', $(this)).each(function(index, item) {
-								arrayItem[headers[index]] = $(item).html();
-							});
-							array.push(arrayItem);
-						});
-						$scope.JobTblPast = array;
-					}
-					*/
 					if (jQuery.isEmptyObject($scope.importedTableLog) === false) {
 						$scope.JobTblPast = $scope.importedTableLog;
 					}
@@ -2103,12 +2083,13 @@
 
 					switch (val) {
 						case '1': // json file input
+							$("#inputFileNameDisplay").val("");
 							$scope.outputPreview(); //my fake wana-be ng-update ng-model updater
 							break;
 						case '2':
 							break;
 						case '3': //default
-
+							$("#inputFileNameDisplay").val("");
 							$scope.importedJsonFile = myAppFactoryJson;
 							$scope.outputPreview(); //my fake wana-be ng-update ng-model updater
 
@@ -2162,7 +2143,7 @@
 						templateText = jsonVar.resumeTemplateJSON.body;
 						$scope.resumePreviewBody = $interpolate(templateText)($scope);
 					}
-					
+
 					if (angular.isUndefined(jsonVar.resumeTemplateJSON)) {
 						jsonVar.resumeTemplateJSON;
 					} else {
@@ -2408,7 +2389,9 @@
 					},
 					"receiverTemplateJSON":
 					{
+						"jobnameinputPrompt":"Position:",
 						"jobname": "",
+						"jobidinputPrompt":"Job Code:",
 						"jobid": "",
 						"hours":  [ {"id":'0', "workduration" : "temp"}, {"id":'1', "workduration" : "full-time"}, { "id":'2', "workduration" : "part-time" }, { "id":'3', "workduration" : "hourly"}, { "id":'4', "workduration" : "seasonal"}, { "id":'5', "workduration" : "salary"} ],
 						"name": "",
@@ -2485,7 +2468,9 @@
 					},
 					"receiverTemplateJSON":
 					{
+						"jobnameinputPrompt":"Position:",
 						"jobname": "Programmer",
+						"jobidinputPrompt":"Job Code:",
 						"jobid": "software developer",
 						"hours":  [ {"id":'0', "workduration" : "temp"}, {"id":'1', "workduration" : "full-time"}, { "id":'2', "workduration" : "part-time" }, { "id":'3', "workduration" : "hourly"}, { "id":'4', "workduration" : "seasonal"}, { "id":'5', "workduration" : "salary"} ],
 						"name": "ACME",
