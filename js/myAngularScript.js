@@ -1,5 +1,6 @@
- /* angular APP Module, Controller, Directive, Filter, Directive */
+/* angular APP Module, Controller, Directive, Filter, Directive */
 var app;
+
 // App Module 'ngSanitize'
 app = angular.module('myApp', ['ngSanitize']);
 
@@ -637,6 +638,7 @@ app.directive('myCurrentTime', ['$interval', 'dateFilter', function($interval, d
             });
         }
 }]);
+
 // App Module Filter
 app.filter('unsafe', function($sce){
     // i dont need this anymore, but i anticipate resurecting its usage, 'angular-sanitize.js' handles unsafe and interpolation filters for me now // used for formatting html contained as a text // ng-bind-html = 'scopeVar | unsafe'
@@ -644,6 +646,7 @@ app.filter('unsafe', function($sce){
         return $sce.trustAsHtml(val);
     };
 });
+
 // App Factory
 app.factory('myAppFactoryJson', function(){
     var factoryObj = {

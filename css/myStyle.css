@@ -1,6 +1,11 @@
+    @import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+    @import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+    @import url('https://fonts.googleapis.com/css?family=Ubuntu');
+    @import url('https://fonts.googleapis.com/css?family=Inconsolata');
 /* modify standard named: html5, bootsrap, w3css styles */
     body {
         font-family: monospace;
+        font-family: 'Roboto Slab', serif;
         background-color: silver;
     }
     input[type=text], input[type=url], input[type=email], input[type=tel], select, option {
@@ -35,6 +40,23 @@
     }
 
 /* my specific custom styles */
+    .fontInconsolata{
+        font-family: 'Inconsolata', monospace;
+    }
+    .fontDancingScript{
+        font-family: 'Dancing Script', cursive;
+    }
+    #myCoverPageTitle{
+        font-family: 'Dancing Script', cursive;
+        font-size: 70px;
+    }
+    #myCoverPageTitle:hover{
+        font-size: 75px;
+    }
+    .titlebrowser{
+        font-size: 60px;
+    }
+
 
     /* used in FOUC: Flash Of Unstyled Content */
     .starthidden-onpageload {

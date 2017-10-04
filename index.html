@@ -46,7 +46,7 @@
 	<body ng-app="myApp" ng-controller="myAppCtrl"  ng-class="{'toggleBlackBackground': togglePaper}"><!-- APP HTML BODY -->
 		<div id='myCoverPage' class='vertical-center'><!-- splash screen -->
 			<div id='myCoverPageTitle'  style='z-index: 3'>
-				<button class='textAsButton' ng-click="starApp()" style='z-index: 3' ng-mousedown="clickLightGoldStyle={'color':'gray'}" ng-mouseup="clickLightGoldStyle={'color':''}" ng-style="clickLightGoldStyle" ng-class="button">Document Writer App</button>
+				<button id="btnSplashTitle" class='textAsButton' ng-click="starApp()" style='z-index: 3' ng-mousedown="clickLightGoldStyle={'color':'gray'}" ng-mouseup="clickLightGoldStyle={'color':''}" ng-style="clickLightGoldStyle" ng-class="button">Document Writer App</button>
 			</div>
 			<div id="wrapperLoadScreen2" ng-if='false'><!-- additional animation to show the page has not loaded yet -->
 				<div class="profile-main-loader">
@@ -62,12 +62,12 @@
 		<div id='mainContainer' class='starthidden-onpageload'><!-- Main Container, the 'meat' of the APP -->
 			<nav class="navbar navbar-inverse navbar-fixed-top"><!-- top nav bar -->
 				<div class="my-jumbotron w3-gray ">
-					<div class='toggleColors w3-block'>| My Resume Template |
+					<div class='toggleColors w3-block'><span class="fontInconsolata">| My Resume Template |</span>
 						<div class='btn w3-gray'  ng-click='tabShow(7)'>credits <span class="glyphicon glyphicon-flag"></span></div>
 						<div class='btn' ng-click='togglePaper = !togglePaper'>color <span class="glyphicon glyphicon-adjust"></span></div>
 						<span class='w3-right'>
-							<i id='myCornerClock' my-current-time='format'></i>
-							<i id='myCornerClock2' my-current-time='format2' ng-show='false'></i> | <button class='btn' onclick='btnShowExitAppWarning()'><i class='fa fa-power-off'></i></button>
+							<span id='myCornerClock' my-current-time='format' class="fontInconsolata"></span>
+							<span id='myCornerClock2' my-current-time='format2' ng-show='false' class="fontInconsolata"></span> | <button class='btn' onclick='btnShowExitAppWarning()'><i class='fa fa-power-off'></i></button>
 						</span>
 					</div>
 
@@ -1214,13 +1214,6 @@
 		<script type="text/javascript" src="js/angular-sanitize.js"></script>
 		<script src="js/jquery.tabletojson.js"></script>
 
-		<!-- my offline alternate scripts
-		<script src="jquery.min.js"></script>
-		<script type="text/javascript" src="./bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-		<script src="angular.min.js"></script>
-		<script src="angular-sanitize.js"></script>
-		<script src="jquery.tabletojson.js"></script>
-		-->
 		<!-- html file scripts -->
 		<script type="text/javascript" src="js/myVanillaScript.js"></script>
 		<script type="text/javascript" src="js/myAngularScript.js"></script>

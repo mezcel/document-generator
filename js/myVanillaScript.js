@@ -216,17 +216,17 @@
            var isBlink = (isChrome || isOpera) && window.CSS;
 
            if (isChrome) {
-               return " <i class='fa fa-chrome' aria-hidden='true'  style='color:red' ng-if = 'true'>Chrome</i>";
+               return "<br><i class='fa fa-chrome titlebrowser' aria-hidden='true'  style='color:red' ng-if = 'true'><span class='fontDancingScript'>Chrome</span></i>";
            } else if (isOpera) {
-               return " <i class='fa fa-opera' aria-hidden='true'  style='color:red' ng-if = 'true'>Opera</i>";
+               return "<br><i class='fa fa-opera titlebrowser' aria-hidden='true'  style='color:red' ng-if = 'true'><span class='fontDancingScript'>Opera</span></i>";
            } else if (isIE) {
-               return " <i class='fa fa-internet-explorer' aria-hidden='true'  style='color:#336699' ng-if='true'>IE</i>";
+               return " <i class='fa fa-internet-explorer titlebrowser' aria-hidden='true'  style='color:#336699' ng-if='true'><span class='fontDancingScript'>IE</span></i>";
            } else if (isSafari) {
-               return " <i class='fa fa-safari' aria-hidden='true'  style='color:#42d9f4' ng-if = 'true'>Safari</i>";
+               return "<br><i class='fa fa-safari titlebrowser' aria-hidden='true'  style='color:#42d9f4' ng-if = 'true'><span class='fontDancingScript'>Safari</span></i>";
            } else if (isFirefox) {
-               return " <i class='fa fa-firefox' aria-hidden='true'  style='color:#E66000' ng-if = 'true'>Firefox</i>";
+               return "<br><i class='fa fa-firefox titlebrowser' aria-hidden='true'  style='color:#E66000' ng-if = 'true'><span class='fontDancingScript'>Firefox</span></i>";
            } else if (isBlink) {
-               return " <i class='fa fa-chrome' aria-hidden='true' style='color:#6699ff' ng-if = 'true'>Chromium</i>";
+               return "<br><i class='fa fa-chrome titlebrowser' aria-hidden='true' style='color:#6699ff' ng-if = 'true'><span class='fontDancingScript'>Chromium</span></i>";
            } else {
                return " :)";
            }
@@ -253,7 +253,7 @@
        /* **************** */
        window.onload = function() {
            'use strict';
-           document.getElementById('myCoverPageTitle').innerHTML += getBrowser(); //show which browser is being used
+           document.getElementById('btnSplashTitle').innerHTML += getBrowser(); //show which browser is being used
            document.getElementById('browserClockSvg').innerHTML += "<svg width='300px' height='300px' viewBox='0 0 300 300'><use xlink:href='#myClockSvgId' ng-if = 'true'></use></svg>"; //getBrowserClock(); //show clock based on which browser is being used
        };
 
