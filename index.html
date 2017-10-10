@@ -399,69 +399,94 @@
 							<form id='formSettingsID' name='frmTemplates' class="container-fluid" novalidate>
 								<h3>Template Setting:</h3><br>
 								<div class="form-group container-fluid w3-round-xlarge w3-border graytheme-paper" ng-class="{'whitetheme-paper': togglePaper}" >
-										<div class='row'>
-											<div class='col-sm-2'>
-												<h4>JSON File</h4>
-											</div>
-											<div class='col-sm-8'>
-												<h4>
-												<div class='row container-fluid'>
-													<div class="input-group">
-														<label class="input-group-btn" >
-															<span class="btn btn-primary">
-																Browse&hellip; <input id='resumeTemplateUpload' onchange="angular.element(this).scope().fileInputResumeJSON(this)" type="file" style="display: none;" ng-disabled = "frmTemplates.rdoResumeTemplate !== '1'">
-															</span>
-														</label>
-														<input type="text" class="form-control" readonly>
-													</div>
-												</div>
-												</h4>
-											</div>
-											<div class='col-sm-2'>
-												<h4><label class="switch"><input type='radio' name= 'rdoResumeTemplate' ng-model='frmTemplates.rdoResumeTemplate' value='1' ng-change='loadResumeTemplateStrings(frmTemplates.rdoResumeTemplate)'></input><div class="slider round"></div></label><span ng-show="frmTemplates.rdoResumeTemplate === '1'"><i class='fa fa-check w3-text-green' style='font-size:20px'></i></span></h4>
-											</div>
+									<div class='row'>
+										<div class='col-sm-2'>
+											<h4>JSON File</h4>
 										</div>
-										<div class='row w3-border-top'>
-											<div class='col-sm-2'>
-												<h4>Templates</h4>
-											</div>
-											<div class='col-sm-8'>
+										<div class='col-sm-8'>
 											<h4>
-											<a data-toggle='tooltip' data-placement='top' title="This feature is a relic from a previous design. I decided to just rely on Imported JSON files instead. This feature will make my Html file even more bloated than it already is. It will also add more moving parts to contribute to mystery bugs and update fixes.">
+											<div class='row container-fluid'>
 												<div class="input-group">
-													<span class='input-group-addon span-width'>Templates:</span>
-													<select class ='form-control' ng-model='dbxTemplate'>
-														<option value='1' selected>Standard</option>
-														<option value='2'>Bulleted</option>
-														<option value='3'>Niche</option>
-													</select>
+													<label class="input-group-btn" >
+														<span class="btn btn-primary">
+															Browse&hellip; <input id='resumeTemplateUpload' onchange="angular.element(this).scope().fileInputResumeJSON(this)" type="file" style="display: none;" ng-disabled = "frmTemplates.rdoResumeTemplate !== '1'">
+														</span>
+													</label>
+													<input type="text" class="form-control" readonly>
 												</div>
+											</div>
+											</h4>
+										</div>
+										<div class='col-sm-2'>
+											<h4>
+												<label class="switch">
+													<input type='radio' name= 'rdoResumeTemplate' ng-model='frmTemplates.rdoResumeTemplate' value='1' ng-change='loadResumeTemplateStrings(frmTemplates.rdoResumeTemplate)'></input>
+													<div class="slider round"></div>
+												</label>
+												<span ng-show="frmTemplates.rdoResumeTemplate === '1'">
+													<i class='fa fa-check w3-text-green' style='font-size:20px'></i>
+												</span>
+												<span ng-show="frmTemplates.rdoResumeTemplate !== '1'">
+													<i class='fa fa-window-minimize w3-text-gray' style='font-size:20px'></i>
+												</span>
+											</h4>
+										</div>
+									</div>
+									<div class='row w3-border-top'>
+										<div class='col-sm-2'>
+											<h4>Templates</h4>
+										</div>
+										<div class='col-sm-8'>
+											<h4>
+												<a data-toggle='tooltip' data-placement='top' title="This feature is a relic from a previous design. I decided to just rely on Imported JSON files instead. This feature will make my Html file even more bloated than it already is. It will also add more moving parts to contribute to mystery bugs and update fixes.">
+													<div class="input-group">
+														<span class='input-group-addon span-width'>Templates:</span>
+														<select class ='form-control' ng-model='dbxTemplate'>
+															<option value='1' selected>Standard</option>
+															<option value='2'>Bulleted</option>
+															<option value='3'>Niche</option>
+														</select>
+													</div>
 												</a>
 											</h4>
-											</div>
-											<div class='col-sm-2'>
-												<h4>
+										</div>
+										<div class='col-sm-2'>
+											<h4>
 												<a data-toggle='tooltip' data-placement='top' title="This switch is only decoration. It used to be an option, but now it just provides visual symmetry.">
 													<label class="switch">
 														<input type='radio' name= 'rdoResumeTemplate' ng-model='frmTemplates.rdoResumeTemplate' value='2' ng-change='loadResumeTemplateStrings(frmTemplates.rdoResumeTemplate)'></input>
 														<div class="slider round"></div>
 													</label>
-													</a>
-													<span ng-show="frmTemplates.rdoResumeTemplate === '2'">
-														<i class='fa fa-check w3-text-green' style='font-size:20px'></i>
-													</span>
-												</h4>
-											</div>
+												</a>
+												<span ng-show="frmTemplates.rdoResumeTemplate === '2'">
+													<i class='fa fa-check w3-text-green' style='font-size:20px'></i>
+												</span>
+												<span ng-show="frmTemplates.rdoResumeTemplate !== '2'">
+													<i class='fa fa-window-minimize w3-text-gray' style='font-size:20px'></i>
+												</span>
+											</h4>
 										</div>
-										<div class='row w3-border-top w3-border-bottom '>
-											<div class='col-sm-2'>
-												<h4>Default Setup</h4>
-											</div>
-											<div class='col-sm-8'> </div>
-											<div class='col-sm-2'>
-												<h4><label class="switch"><input type='radio' name= 'rdoResumeTemplate' ng-model='frmTemplates.rdoResumeTemplate' value='3' ng-change='loadResumeTemplateStrings(frmTemplates.rdoResumeTemplate)'></input><div class="slider round"></div></label><span ng-show="frmTemplates.rdoResumeTemplate === '3'"><i class='fa fa-check w3-text-green' style='font-size:20px'></i></span></h4>
-											</div>
+									</div>
+									<div class='row w3-border-top w3-border-bottom '>
+										<div class='col-sm-2'>
+											<h4>Default Setup</h4>
 										</div>
+										<div class='col-sm-8'> </div>
+										<div class='col-sm-2'>
+											<h4>
+												<label class="switch">
+													<input type='radio' name= 'rdoResumeTemplate' ng-model='frmTemplates.rdoResumeTemplate' value='3' ng-change='loadResumeTemplateStrings(frmTemplates.rdoResumeTemplate)'></input>
+													<div class="slider round"></div>
+												</label>
+												<span ng-show="frmTemplates.rdoResumeTemplate === '3'">
+													<i class='fa fa-check w3-text-green' style='font-size:20px'></i>
+												</span>
+												<span ng-show="frmTemplates.rdoResumeTemplate !== '3'">
+													<i class='fa fa-window-minimize w3-text-gray' style='font-size:20px'></i>
+												</span>
+											</h4>
+										</div>
+									</div>
 									<div class='w3-center'>
 										<h4>
 											<button class="glyphicon glyphicon-trash textAsButton" ng-mousedown="clickBigTrash={'color':'red','font-size':'larger'}" ng-mouseup="clickBigTrash={'font-size':''}" ng-style="clickBigTrash" ng-class="button" onclick='clearSession()'></button> :
@@ -545,7 +570,7 @@
 											<a data-toggle='tooltip' data-placement='bottom' title="Simulated recall data from a previous web browser session."><button ng-click = 'btnDemoLogPast()' class='btn w3-btn-block w3-border w3-white w3-round-large'>Past Log Demo <span class='glyphicon glyphicon-import'></span></button></a>
 										</div>
 										<div class='col-sm-3'>
-											<a data-toggle='tooltip' data-placement='bottom' title="Take the data displayed in the table below, and send ot to the Optput Log Preview"> <button class="btn btn-primary w3-btn-block w3-green" onclick='inputLog2OutputLog()' ng-click = 'lastSession2thisSession()'>To Output Log <span class='glyphicon glyphicon-export'></span></button>  </a>
+											<a data-toggle='tooltip' data-placement='bottom' title="Take the data displayed in the table below, and send ot to the Optput Log Preview"> <button class="btn btn-primary w3-btn-block w3-green" onclick='inputLog2OutputLog()' ng-click = 'lastSession2thisSession()'>To Output Log <span class='glyphicon glyphicon-export'></span></button></a>
 										</div>
 									</div>
 									<div class='col-sm-12 '>
