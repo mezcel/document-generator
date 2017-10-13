@@ -754,7 +754,7 @@ app.factory('myAppFactoryJsonDEMO', function(){
             "city": "Megatropolis",
             "state": "MT",
             "zip": "67890",
-            "website": "name@mail.com",
+            "website": "wwww.website.com",
             "attn": "Mr. Smith",
             "attnemail": "name@mail.com",
             "phone":"987-654-3210",
