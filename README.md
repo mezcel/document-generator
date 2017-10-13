@@ -10,9 +10,11 @@ Both versions, as it is now, are tailored to me and the functional task I was tr
 * v1 - JavaScript, Html 5
 * v2 - jQuery Angular, Bootstrap, SVG
 
+> Note: "```meznull```", without the ```quotes``` is the safety input for empty input/textarea fields
+
 ## Inspiration behind writing this app:
 
-This application was developed as a tool to help me generate personalized resumes, cover letters and email greetings. Many employers hire through recruiting agencies and automated website application forms. This application is worthless other than the chance a ```Human``` wants an interactive hard copy.
+This application was developed as a tool to help me generate personalized resumes, cover letters and email greetings. Many employers hire through recruiting agencies and automated website application forms. This application is worthless other than the chance a ```human/non-bot``` wants an interactive hard copy.
 
 ### I wanted to make an App which I could use in the public libraries and company lobby waiting areas throughout the country:
 
