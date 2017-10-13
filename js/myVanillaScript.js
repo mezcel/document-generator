@@ -219,15 +219,19 @@
                document.getElementById("myCoverPage").style.borderColor = "red";
                return "<br><i class='fa fa-chrome titlebrowser' aria-hidden='true'  style='color:red' ng-if = 'true'><span class='fontDancingScript'>Chrome</span></i>";
            } else if (isOpera) {
+               document.getElementById("myCoverPage").style.borderColor = "red";
                return "<br><i class='fa fa-opera titlebrowser' aria-hidden='true'  style='color:red' ng-if = 'true'><span class='fontDancingScript'>Opera</span></i>";
            } else if (isIE) {
+               document.getElementById("myCoverPage").style.borderColor = "#336699";
                return " <i class='fa fa-internet-explorer titlebrowser' aria-hidden='true'  style='color:#336699' ng-if='true'><span class='fontDancingScript'>IE</span></i>";
            } else if (isSafari) {
+               document.getElementById("myCoverPage").style.borderColor = "#42d9f4";
                return "<br><i class='fa fa-safari titlebrowser' aria-hidden='true'  style='color:#42d9f4' ng-if = 'true'><span class='fontDancingScript'>Safari</span></i>";
            } else if (isFirefox) {
                document.getElementById("myCoverPage").style.borderColor = "#E66000";
                return "<br><i class='fa fa-firefox titlebrowser' aria-hidden='true'  style='color:#E66000' ng-if = 'true'><span class='fontDancingScript'>Firefox</span></i>";
            } else if (isBlink) {
+               document.getElementById("myCoverPage").style.borderColor = "#6699ff";
                return "<br><i class='fa fa-chrome titlebrowser' aria-hidden='true' style='color:#6699ff' ng-if = 'true'><span class='fontDancingScript'>Chromium</span></i>";
            } else {
                return " :)";
