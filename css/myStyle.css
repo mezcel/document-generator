@@ -85,6 +85,7 @@ table {
     font-size: 58px;
     position: absolute;
     border-bottom: 55px solid;
+    /*border-bottom-color: orange;*/
     background-color: #222;
     color: white;
     z-index: 2;
