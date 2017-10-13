@@ -97,7 +97,11 @@
 
            inputHtm = formattingstyle + inputHtm + "</html>";
 
+           // clean residual punctuation 
+           textToWrite = inputHtm.replace(/../g, '.'); //remove double periods
+           textToWrite = inputHtm.replace(/. ./g, '. '); //remove double periods
            textToWrite = inputHtm.replace(/\s\s+/g, ''); //remove mutiple spaces, this is Extra Overkill, but it is just housekeeping
+
            //desiredFileName = desiredFileName.replace(',', ' '); //remove coma from date
 
            //Check if browser supports Blob
