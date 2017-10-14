@@ -11,7 +11,7 @@
 * type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"
 * src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
 * src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"
-  
+
 
 ## Off-line included use of enclosed resources
 
@@ -26,3 +26,6 @@
 * type="text/javascript" src="jquery.min.js"
 * src="./bootstrap-3.3.7-dist/js/bootstrap.min.js"
 * src="angular.min.js"
+
+# Textbox Resize
+[autosize](http://www.jacklmoore.com/autosize/)

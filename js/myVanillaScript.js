@@ -13,6 +13,8 @@
 
        var reader = new FileReader();
 
+       autosize(document.querySelectorAll('textarea')); // Format Textarea heigh http://www.jacklmoore.com/autosize/
+
        /* ************************************* */
        /* *** Read Write File in JavaScript *** */
        /* ************************************* */
@@ -97,18 +99,22 @@
            var formattingstyle = "<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><title>" + desiredFileName + "</title> <link rel= 'icon' href = 'data:image/x-icon;base64,R0lGODlhEAAQAPIAAAAAABQs///+ps/Pz////wAAAAAAAAAAACH5BAlkAAUAIf8LTkVUU0NBUEUyLjADAQAAACwAAAAAEAAQAAAD6ggAAAAAAAAAAAAQQgghxDAMwzAMAEAABEEQBDEAAAAMAEAABEEQBAIBIAgABgAAgUAgEAgEAgEQEAAGAACBQCAQCAQCASAIAAYAAIFAIBAIBAIBAAAABgAAgUAgEAgEBAQEBAMDAwAABAQEBAQEBAQEBAMDAwMAAAQEBAQEBAQEBAQDAwMDAAAEBAQEBAQEBAQDAwMDAwAABAQEBAQEBAQEAwMDAwMAAAQEBAQEBAQEBAMDAwMDAAAEBAQEBAQEBAMDAwMDAwAABAQEBAQEAwMDAwMDAwMAAAAAAAAAAAAAAAAAAAAAAAASAAAh+QQJMgAFACwAAAAAEAAQAAAD6ggAAAAAAAAAAAAQQgghxDAMwzAMAEAABEAAADAAAAAMAEAAAAAABAABIAgABgAAgUAgEAgEAgEQEAAGAACBQCAQCAQCASAIAAYAAIFAIBAIBAIBAAAABgAAgUAgEAgEBAQEBAMDAwAABAQEBAQEBAQEBAMDAwMAAAQEBAQEBAQEBAQDAwMDAAAEBAQEBAQEBAQDAwMDAwAABAQEBAQEBAQEAwMDAwMAAAQEBAQEBAQEBAMDAwMDAAAEBAQEBAQEBAMDAwMDAwAABAQEBAQEAwMDAwMDAwMAAAAAAAAAAAAAAAAAAAAAAAASAAAh+QQJZAAFACwAAAAAEAAQAAAD6ggAAAAAAAAAAAAQQgghxDAMwzAMAEAABEAAADAAAAAMAEAAAAAABAABIAgABgAAgUAgEAgEAgEQEAAGAAABAAAAAAQCASAIAAYAAIFAIBAIBAIBAAAABgAAgUAgEAgEBAQEBAMDAwAABAQEBAQEBAQEBAMDAwMAAAQEBAQEBAQEBAQDAwMDAAAEBAQEBAQEBAQDAwMDAwAABAQEBAQEBAQEAwMDAwMAAAQEBAQEBAQEBAMDAwMDAAAEBAQEBAQEBAMDAwMDAwAABAQEBAQEAwMDAwMDAwMAAAAAAAAAAAAAAAAAAAAAAAASAAAh+QQJZAAFACwAAAAAEAAQAAAD6ggAAAAAAAAAAAAQQgghxDAMwzAMAEAABEAAADAAAAAMAEAAAAAABAABIAgABgAAgUAgEAgEAgEQEAAGAAABAAAAAAQCASAIAAYAAIFAIBAIBAIBAAAABgAAAQAAAAAABAQEBAMDAwAABAQEBAQEBAQEBAMDAwMAAAQEBAQEBAQEBAQDAwMDAAAEBAQEBAQEBAQDAwMDAwAABAQEBAQEBAQEAwMDAwMAAAQEBAQEBAQEBAMDAwMDAAAEBAQEBAQEBAMDAwMDAwAABAQEBAQEAwMDAwMDAwMAAAAAAAAAAAAAAAAAAAAAAAASAAAh+QQJZAAFACwAAAAAEAAQAAAD6ggAAAAAAAAAAAAQQgghxDAMwzAMAEAABEAAADAAAAAMAEAAAAAABAABIAgABgAAgUAgEAgEAgEQEAAGAAABAAAAAAQCASAIAAYAAIFAIBAIBAIBAAAABgAAAQAAAAAABAQEBAMDAwAABAQEBAQEBAQEBAMDAwMAAAQAAAAAAAAAAAAAAAMDAAAEBAQEBAQEBAQDAwMDAwAABAQEBAQEBAQEAwMDAwMAAAQEBAQEBAQEBAMDAwMDAAAEBAQEBAQEBAMDAwMDAwAABAQEBAQEAwMDAwMDAwMAAAAAAAAAAAAAAAAAAAAAAAASAAAh+QQJZAAFACwAAAAAEAAQAAAD6ggAAAAAAAAAAAAQQgghxDAMwzAMAEAABEAAADAAAAAMAEAAAAAABAABIAgABgAAgUAgEAgEAgEQEAAGAAABAAAAAAQCASAIAAYAAIFAIBAIBAIBAAAABgAAAQAAAAAABAQEBAMDAwAABAQEBAQEBAQEBAMDAwMAAAQAAAAAAAAAAAAAAAMDAAAEBAQEBAQEBAQDAwMDAwAABAAAAAQAAAAEAAAAAwMAAAQEBAQEBAQEBAMDAwMDAAAEBAQEBAQEAwMDAwMDAwAABAQEBAQEAwMDAwMDAwMAAAAAAAAAAAAAAAAAAAAAAAASAAAh+QQJZAAFACwAAAAAEAAQAAAD6ggAAAAAAAAAAAAQQgghxDAMwzAMAEAABEAAADAAAAAMAEAAAAAABAABIAgABgAAgUAgEAgEAgEQEAAGAAABAAAAAAQCASAIAAYAAIFAIBAIBAIBAAAABgAAAQAAAAAABAQEBAMDAwAABAQEBAQEBAQEBAMDAwMAAAQAAAAAAAAAAAAAAAMDAAAEBAQEBAQEBAQDAwMDAwAABAAAAAQAAAAEAAAAAwMAAAQEBAQEBAQEBAMDAwMDAAAEAAAAAAAABAAAAAADAwAABAQEBAQEAwMDAwMDAwMAAAAAAAAAAAAAAAAAAAAAAAASAAA7' type='image/x-icon'><style type='text/css'> .tab { text-indent: 40px; } table, tr, th, td {text-align: center;} table {width: 100%;} </style></head>";
 
            //inputHtm = formattingstyle + inputHtm + "</html>";
-           inputHtm = inputHtm.replace(/\<span class\=\"highlighterDiv\"\>\meznull\<\/span\>/g, 'meznull'); //remove  <span class="highlighterDiv">.</span>
-           inputHtm = inputHtm.replace(/\<span class\=\"highlighterDiv\"\>name\@mail\.com\<\/span\>/gi, ''); //remove  <span class="highlighterDiv">abc@123.com</span>
-           inputHtm = inputHtm.replace(/\<span class\=\"highlighterDiv\"\>www\.website\.com\<\/span\>/g, ''); //remove  <span class="highlighterDiv">###-###-####</span>
+           inputHtm = inputHtm.replace(/\<span class\=\"highlighterDiv\"\>/g, ''); //remove  <span class="highlighterDiv">.</span>
+           inputHtm = inputHtm.replace(/\<\/span\>/g, ''); //remove  <span class="highlighterDiv">.</span>
+
+           //inputHtm = inputHtm.replace(/\<span class\=\"highlighterDiv\"\>\meznull\<\/span\>/g, 'meznull'); //remove  <span class="highlighterDiv">.</span>
+           //inputHtm = inputHtm.replace(/\<span class\=\"highlighterDiv\"\>name\@mail\.com\<\/span\>/gi, ''); //remove  <span class="highlighterDiv">abc@123.com</span>
+           //inputHtm = inputHtm.replace(/\<span class\=\"highlighterDiv\"\>www\.website\.com\<\/span\>/g, ''); //remove  <span class="highlighterDiv">###-###-####</span>
            inputHtm = inputHtm.replace(/meznull\,/g, '').trim();
            inputHtm = inputHtm.replace(/\, meznull/g, '').trim();
            inputHtm = inputHtm.replace(/meznull\<br\>/g, '').trim();
-           inputHtm = inputHtm.replace(/meznull\./g, '').trim();
-           inputHtm = inputHtm.replace(/ \.meznull/g, '').trim();
+           inputHtm = inputHtm.replace(/meznull\./g, '. ').trim();
+           inputHtm = inputHtm.replace(/ \.meznull/g, ' ').trim();
            inputHtm = inputHtm.replace(/[.]+[.]+/g, '. ').trim();
-           inputHtm = inputHtm.replace(/[,]+[,]+/g, ', ').trim();
-           inputHtm = inputHtm.replace(/[,]+[.]+/g, '. ').trim();
+           //inputHtm = inputHtm.replace(/[,]+[,]+/g, ', ').trim();
+           //inputHtm = inputHtm.replace(/[,]+[.]+/g, '. ').trim();
            inputHtm = inputHtm.replace(/meznull/g, '').trim();
+           inputHtm = inputHtm.replace(/\!\./g, '.').trim();
 
             inputHtm = inputHtm.replace(/\s\./g, " "); //
            //desiredFileName = desiredFileName.replace(',', ' '); //remove coma from date
