@@ -121,7 +121,7 @@
 
            inputHtm = formattingstyle + inputHtm + "</html>";
 
-           textToWrite = inputHtm.replace(/\s\s+/g, ''); //remove mutiple spaces, this is Extra Overkill, but it is just housekeeping
+           textToWrite = inputHtm.replace(/\s\s+/g, ' '); //remove mutiple spaces, this is Extra Overkill, but it is just housekeeping
 
            //Check if browser supports Blob
            if (window.Blob) {
